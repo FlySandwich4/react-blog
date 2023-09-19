@@ -1,9 +1,25 @@
-import { useState } from "react";
+import { gql, useQuery } from "@apollo/client";
+import { useEffect, useState } from "react";
 
-const useFetch = () => {
-    const [a, setA] = useState(0);
-    const b = "hi";
-    return [a, setA, b];
+
+const useFetchSingleBlog = (slug) => {
+    const a = "my-first-project"
+    const query = gql`
+    query MyQuery {
+        blog(where: {slug: "${String(slug)}"}) {
+          categories {
+            name
+          }
+          slug
+          title
+          content
+        }
+      }
+    `
+    const { data, loading, error } = useQuery(query);
+    if (loading) return <p>loading</p>;
+    if (error) return <p>error</p>;
+    return data;
 }
  
-export default useFetch;
+export default useFetchSingleBlog;
