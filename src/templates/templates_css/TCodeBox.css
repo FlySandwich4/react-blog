@@ -1,0 +1,82 @@
+.TCodeBox_Container {
+    width: 100vw;
+}
+
+.TCodeBox_CodeBlock {
+    width: auto;
+    margin: 20px;
+    background-color: rgb(234,234,234);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.TCodeBox_TitleBar {
+    background-color: black;
+    color:rgb(0,255,0);
+    width: 100%;
+    display: flex;
+}
+
+.TCodeBox_Title {
+    margin: 5px;
+}
+
+.TCodeBox_FillSpace {
+    margin-right: auto;
+}
+
+.TCodeBox_FoldButton {
+    float: right;
+    margin: 5px;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    
+}
+
+.TCodeBox_FoldButton:hover {
+    
+}
+
+.TCodeBox_CodeContent {
+    transform: scaleY(1);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+    overflow-y: hidden;
+}
+
+.TCodeBox_CodeContent:hover {
+    overflow-y: scroll;
+}
+
+.TCodeBox_OpenCodeContent {
+    max-height: 90vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: max-height 0.3s, padding-bottom 0.3s, padding-top 0.3s;
+}
+
+.TCodeBox_CloseCodeContent {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: max-height 0.3s, padding-bottom 0.3s, padding-top 0.3s;
+}
+
+/* Scroll Bar */
+.TCodeBox_CodeContent::-webkit-scrollbar {
+    width:8px;
+    background-color: transparent;
+    
+}
+
+.TCodeBox_CodeContent::-webkit-scrollbar-button {
+    display: none;
+}
+
+.TCodeBox_CodeContent::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px;
+}
+
