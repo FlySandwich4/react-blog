@@ -16,3 +16,23 @@ pre {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+.Test_Test {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.Test_Right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.Test_Container {
+  width: 80%;
+}

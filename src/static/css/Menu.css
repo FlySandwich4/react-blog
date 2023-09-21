@@ -1,0 +1,54 @@
+.Menu {
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    background-color:  rgb(130, 184, 173);
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+.Menu_HideOnMobile {
+    display: none;
+}
+
+.Menu_Button {
+    right: 0;
+    position: absolute;
+  }
+
+.Menu::-webkit-scrollbar {
+width: 8px;
+background-color: rgb(130, 184, 173);
+}
+
+.Menu::-webkit-scrollbar-button:no-button  {
+/* color: transparent; */
+}
+
+
+
+.Menu::-webkit-scrollbar-track:hover {
+background-color: rgb(130, 184, 173);
+}
+
+
+.Menu::-webkit-scrollbar-thumb{
+background-color:  rgb(130, 184, 173);
+/* outline: 1px solid slategrey; */
+border-radius: 10px;
+}
+.Menu:hover::-webkit-scrollbar-thumb {
+background-color:  rgb(70, 100, 94);
+/* outline: 1px solid slategrey; */
+border-radius: 10px;
+}
+
+.Menu_FoldedContainer {
+position: relative;
+width: 30px;
+}
+
+.Menu_Container {
+position: relative;
+}

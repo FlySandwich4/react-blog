@@ -1,7 +1,13 @@
 import { gql, useQuery } from "@apollo/client";
 import { useEffect, useState } from "react";
 
-
+/**
+ * 
+ * @param 
+ *    - {String} slug : the url of the page
+ * @returns 
+ *    - {Object} data : the data of the page, including title, content...
+ */
 const useFetchSingleBlog = (slug) => {
     const a = "my-first-project"
     const query = gql`

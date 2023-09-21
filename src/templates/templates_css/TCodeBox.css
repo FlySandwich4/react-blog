@@ -35,7 +35,7 @@
 }
 
 .TCodeBox_FoldButton:hover {
-    
+    cursor: pointer;
 }
 
 .TCodeBox_CodeContent {
@@ -43,12 +43,10 @@
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1rem;
-    overflow-y: hidden;
-}
-
-.TCodeBox_CodeContent:hover {
     overflow-y: scroll;
 }
+
+
 
 .TCodeBox_OpenCodeContent {
     max-height: 90vh;

@@ -14,12 +14,12 @@ const SingleBlog = (props) => {
     //     }
     //   }
     // const data = useFetchSingleBlog(props.slug);
-    const slug = "my-first-project";
+    const slug = props.slug;
     const data = useFetchSingleBlog(slug);
     console.log(data);
 
     return (
-        <div>
+        <div style={{"width":"100%"}}>
             {data.blog && data.blog.content.map((content) => (
                 <div>{RenderComponent(content)}</div>
             ))}
