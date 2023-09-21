@@ -1,4 +1,11 @@
-.Menu {
+/* 
+Used by Menu.js
+*/
+
+
+/* PC's CSS: width larger than 800px */
+@media screen and (min-width: 800px) {
+  .Menu {
     width: 350px;
     height: 100vh;
     display: flex;
@@ -8,47 +15,85 @@
     overflow-y: scroll;
   }
 
-.Menu_HideOnMobile {
-    display: none;
+}
+
+
+/* Mobile CSS: width less than 800px */
+@media screen and (max-width: 800px) {
+  .Menu {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color:  rgb(130, 184, 173);
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+}
+
+
+/* General menu CSS */
+.Menu_Folded {
+  display: none;
 }
 
 .Menu_Button {
-    right: 0;
-    position: absolute;
-  }
-
-.Menu::-webkit-scrollbar {
-width: 8px;
-background-color: rgb(130, 184, 173);
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border-style: none;
+  color: rgb(24, 61, 54);
+  font-size: 2rem;
+  font-weight: 800;
+  position: absolute;
 }
 
-.Menu::-webkit-scrollbar-button:no-button  {
-/* color: transparent; */
-}
-
-
-
-.Menu::-webkit-scrollbar-track:hover {
-background-color: rgb(130, 184, 173);
-}
-
-
-.Menu::-webkit-scrollbar-thumb{
-background-color:  rgb(130, 184, 173);
-/* outline: 1px solid slategrey; */
-border-radius: 10px;
-}
-.Menu:hover::-webkit-scrollbar-thumb {
-background-color:  rgb(70, 100, 94);
-/* outline: 1px solid slategrey; */
-border-radius: 10px;
+.Menu_FoldedButton {
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  background-color: rgb(130, 184, 173);
+  border-style: none;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  
 }
 
 .Menu_FoldedContainer {
-position: relative;
-width: 30px;
+  position: relative;
+  width: 25px;
+}
+  
+.Menu_Container {
+  position: relative;
 }
 
-.Menu_Container {
-position: relative;
+
+/* 
+Scroll Bar's CSS Starting from this line
+*/
+.Menu::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(130, 184, 173);
+}
+
+/* Delete the button */
+.Menu::-webkit-scrollbar-button:no-button {
+}
+
+/* Display Scroll bar when hover */
+.Menu::-webkit-scrollbar-track:hover {
+  background-color: rgb(130, 184, 173);
+}
+
+.Menu::-webkit-scrollbar-thumb{
+  background-color:  rgb(130, 184, 173);
+  border-radius: 10px;
+}
+
+.Menu:hover::-webkit-scrollbar-thumb {
+  background-color:  rgb(70, 100, 94);
+  border-radius: 10px;
 }
