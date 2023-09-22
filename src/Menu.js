@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./static/css/Menu.css"
 
 /**
@@ -6,9 +7,16 @@ import "./static/css/Menu.css"
  */
 const Menu = () => {
     const imgData = "https://media.graphassets.com/output=format:jpg/resize=width:59,height:59,fit:crop/wCNVDswRFW3qxs1ZQfTw";
-    const [isMenuOpen, setIsMenuOpen] = useState(true);
+    const sessionVal = sessionStorage.getItem("blogMenuOpen");
+    // -    When User is using mobile, always close the menu after jump to other links
+    // -    When User is using PC, set the menu status based on the session Val, 
+    //      if session Val === null, set the menu open as default
+    const initBool = window.innerWidth < 800 ? false : sessionVal == null ? true : sessionVal === "true" ? true : false;
+    const [isMenuOpen, setIsMenuOpen] = useState(initBool);
 
     const toggleMenu = () => {
+        // Set the session
+        sessionStorage.setItem("blogMenuOpen", String(!isMenuOpen));
         setIsMenuOpen(!isMenuOpen);
     }
 
@@ -26,7 +34,6 @@ const Menu = () => {
         <div className= { menuClass }>
             <div className="spacer"><br/><br/><br/><br/></div>
             <img className="myphoto" src={ imgData }></img>
-            
         </div>
     </div>)
 }

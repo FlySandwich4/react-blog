@@ -1,7 +1,8 @@
+import { useParams } from "react-router-dom";
 import RenderComponent from "./RenderComponent";
 import useFetchSingleBlog from "./useFetch";
 
-const SingleBlog = (props) => {
+const SingleBlog = () => {
     // Structrue of data:
     // query MyQuery {
     //     blog(where: {slug: ${slug}}) {
@@ -14,14 +15,14 @@ const SingleBlog = (props) => {
     //     }
     //   }
     // const data = useFetchSingleBlog(props.slug);
-    const slug = props.slug;
+    const { slug } = useParams();
     const data = useFetchSingleBlog(slug);
     console.log(data);
 
     return (
-        <div style={{"width":"100%"}}>
+        <div className="Content">
             {data.blog && data.blog.content.map((content) => (
-                <div>{RenderComponent(content)}</div>
+                <div key={content.title}>{RenderComponent(content)}</div>
             ))}
         </div>
     );

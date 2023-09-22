@@ -17,14 +17,14 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-.Test_Test {
+.DisplayBox {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.Test_Right {
+.ContentBox {
   width: 100%;
   height: 100%;
   display: flex;
@@ -34,6 +34,17 @@ pre {
   overflow-y: scroll;
 }
 
-.Test_Container {
-  width: 80%;
+/* PC's CSS: width larger than 800px */
+@media screen and (min-width: 800px) {
+  .Content {
+    width: 70%;
+  }
 }
+
+/* Mobile CSS: width less than 800px */
+@media screen and (max-width: 800px) {
+  .Content {
+    width: 100%;
+  }
+}
+

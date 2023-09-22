@@ -5,7 +5,6 @@ Used by Menu.js
 
 /* PC's CSS: width larger than 800px */
 @media screen and (min-width: 800px) {
-
   .Menu_Container {
     width: 350px;
     position: relative;
