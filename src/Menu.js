@@ -8,7 +8,7 @@ import "./static/css/Menu.css"
 const Menu = () => {
     const imgData = "https://media.graphassets.com/output=format:jpg/resize=width:59,height:59,fit:crop/wCNVDswRFW3qxs1ZQfTw";
     const sessionVal = sessionStorage.getItem("blogMenuOpen");
-    // -    When User is using mobile, always close the menu after jump to other links
+    // -    When User is using mobile, always close the menu when user first visit the page
     // -    When User is using PC, set the menu status based on the session Val, 
     //      if session Val === null, set the menu open as default
     const initBool = window.innerWidth < 800 ? false : sessionVal == null ? true : sessionVal === "true" ? true : false;
@@ -18,6 +18,12 @@ const Menu = () => {
         // Set the session
         sessionStorage.setItem("blogMenuOpen", String(!isMenuOpen));
         setIsMenuOpen(!isMenuOpen);
+    }
+
+    // When mobile user click a link, it close the menu and display content
+    // When PC user click a link, it keeps the menu as it was
+    const mobileClickLink = () => {
+        if (window.innerWidth < 800) toggleMenu();
     }
 
     // Content of boxes
@@ -34,6 +40,8 @@ const Menu = () => {
         <div className= { menuClass }>
             <div className="spacer"><br/><br/><br/><br/></div>
             <img className="myphoto" src={ imgData }></img>
+            <Link to="/" onClick={mobileClickLink}>Home</Link>
+            <Link to="/my-first-project" onClick={mobileClickLink}>www</Link>
         </div>
     </div>)
 }
