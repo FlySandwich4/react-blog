@@ -21,6 +21,7 @@ pre {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .Test_Right {
