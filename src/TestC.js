@@ -1,16 +1,27 @@
+import Menu from "./Menu";
+import SingleBlog from "./SingleBlog";
 import TCodeBox from "./templates/TCodeBox";
-import useFetch from "./useFetch.js";
+import useFetchSingleBlog from "./useFetch.js";
 
+/**
+ * Test templates, pages here
+ */
 const Test = () => {
     const str = "cout<<abc \n  \n \n \n \n\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaa\naaa\naaa\naaa \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \naaa \naaa\n\n\naaaaaa";
-    const [a, setA, b] = useFetch();
-    console.log(a, b);
-    return (<div>
-        Testing Case:
-        <div>Hello</div>
-        <TCodeBox title={"computer.js"} content={str}/>
-        <TCodeBox title={"aaa"} content={str}/>
-        <TCodeBox title={2} content={str+str}/>
+    return (<div className="Test_Test">
+        <Menu />
+        <div className="Test_Right">
+            <div className="Test_Container">
+                Testing Case:
+                <div>Hello</div>
+                <SingleBlog slug="my-first-project"/>
+                <TCodeBox title={"computer.js"} content={str}/>
+                <TCodeBox title={"aaa"} content={str}/>
+                <TCodeBox title={2} content={str+str}/>
+            </div>
+            
+        </div>
+        
     </div>);
 }
  

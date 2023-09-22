@@ -1,0 +1,99 @@
+/* 
+Used by Menu.js
+*/
+
+
+/* PC's CSS: width larger than 800px */
+@media screen and (min-width: 800px) {
+
+  .Menu_Container {
+    width: 350px;
+    position: relative;
+    flex-shrink: 0;
+    transition: width 0.3s;
+  }
+}
+
+/* Mobile CSS: width less than 800px */
+@media screen and (max-width: 800px) {
+  .Menu_Container {
+    width: 100vw;
+    position: relative;
+    flex-shrink: 0;
+    transition: width 0.3s;
+  }
+}
+
+/* General menu CSS */
+.Menu_FoldedContainer {
+  position: relative;
+  width: 25px;
+  height: 100%;
+  flex-shrink: 0;
+  transition: width 0.3s;
+}
+
+.Menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color:  rgb(130, 184, 173);
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.Menu_Folded {
+  width: 0;
+}
+
+.Menu_Button {
+  right: 10px;
+  top: 10px;
+  background-color: transparent;
+  border-style: none;
+  color: rgb(24, 61, 54);
+  font-size: 2rem;
+  font-weight: 800;
+  position: absolute;
+}
+
+.Menu_FoldedButton {
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  background-color: rgb(130, 184, 173);
+  border-style: none;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+
+/* 
+Scroll Bar's CSS Starting from this line
+*/
+.Menu::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgb(130, 184, 173);
+}
+
+/* Delete the button */
+.Menu::-webkit-scrollbar-button:no-button {
+}
+
+/* Display Scroll bar when hover */
+.Menu::-webkit-scrollbar-track:hover {
+  background-color: rgb(130, 184, 173);
+}
+
+.Menu::-webkit-scrollbar-thumb{
+  background-color:  rgb(130, 184, 173);
+  border-radius: 10px;
+}
+
+.Menu:hover::-webkit-scrollbar-thumb {
+  background-color:  rgb(70, 100, 94);
+  border-radius: 10px;
+}
