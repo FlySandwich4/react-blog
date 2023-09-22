@@ -20,8 +20,8 @@ const Menu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
 
-    // When mobile user click a link, it close the menu and display content
-    // When PC user click a link, it keeps the menu as it was
+    // When mobile user click a link in the menu, it close the menu and display content
+    // When PC user click a link in the menu, it keeps the menu as it was
     const mobileClickLink = () => {
         if (window.innerWidth < 800) toggleMenu();
     }
