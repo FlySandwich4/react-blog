@@ -41,10 +41,12 @@ Used by Menu.js
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
+  overflow-x: hidden; /* Required: Turn off the scroll bar during transition */
 }
 
 .Menu_Folded {
   width: 0;
+  display: none;
 }
 
 .Menu_Button {
