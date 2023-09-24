@@ -16,13 +16,13 @@ const SingleBlog = () => {
     //   }
     // const data = useFetchSingleBlog(props.slug);
     const { slug } = useParams();
-    const data = useFetchSingleBlog(slug);
-    console.log(data);
+    const {blog} = useFetchSingleBlog(slug);
+    console.log({blog});
 
     return (
         <div className="Content">
-            {data.blog && data.blog.content.map((content) => (
-                <div key={content.title}>{RenderComponent(content)}</div>
+            {blog && blog.content.map((content) => (
+                <div key={content.title}>{ RenderComponent(content) }</div>
             ))}
         </div>
     );

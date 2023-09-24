@@ -59,6 +59,10 @@ Used by Menu.js
   position: absolute;
 }
 
+.Menu_Button:hover {
+  cursor: pointer;
+}
+
 .Menu_FoldedButton {
   width: 100%;
   height: 100%;
@@ -69,6 +73,10 @@ Used by Menu.js
   color: white;
   font-size: 1rem;
   font-weight: 800;
+}
+
+.Menu_FoldedButton:hover {
+  cursor: pointer;
 }
 
 
@@ -97,4 +105,8 @@ Scroll Bar's CSS Starting from this line
 .Menu:hover::-webkit-scrollbar-thumb {
   background-color:  rgb(70, 100, 94);
   border-radius: 10px;
+}
+
+.myphoto {
+  width: 50%;
 }

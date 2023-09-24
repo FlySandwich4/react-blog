@@ -13,7 +13,7 @@ const Test = () => {
             <div className="Content">
                 Testing Case:
                 <div>Hello</div>
-                <SingleBlog slug="my-first-project"/>
+                <SingleBlog/>
                 <TCodeBox title={"computer.js"} content={str}/>
                 <TCodeBox title={"aaa"} content={str}/>
                 <TCodeBox title={2} content={str+str}/>
