@@ -1,0 +1,22 @@
+a {
+    margin: 0;
+    font-style: normal ;
+    text-decoration: none;
+    color: black;
+}
+
+.TBlogCard_Link h1,
+.TBlogCard_Link h2,
+.TBlogCard_Link h3 {
+    margin: 0;
+}
+
+
+.TBlogCard_Link {
+    margin: 20px;
+    width: auto;
+}
+
+.TBlogCard_Container {
+    background-color: rgb(240, 208, 209);
+}

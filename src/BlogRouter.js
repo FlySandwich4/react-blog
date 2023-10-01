@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SingleBlog from "./SingleBlog";
+import {BlogRender, CatRender} from "./PageRender";
 import Test from "./TestC";
 import Menu from './Menu';
 
@@ -11,7 +11,8 @@ const BlogRouter = () => {
         <div className="ContentBox">
           <Routes>
             <Route path="/" element={ <Test /> }></Route>
-            <Route path="/:slug" element={ <SingleBlog />}></Route>
+            <Route path="/:cat" element={ <CatRender />}></Route>
+            <Route path="/:cat/:slug" element={ <BlogRender />}></Route>
           </Routes>
         </div>
       </Router>

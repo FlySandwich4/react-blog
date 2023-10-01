@@ -13,7 +13,7 @@ const TCodeBox = (props) => {
     }
     
     return ( 
-        <div className='TCodeBox_CodeBlock'>
+        <div className='TCodeBox_Container'>
             {/* title bar, the black bar part */}
             <div className='TCodeBox_TitleBar'>
                 <div className='TCodeBox_Title'>{ codeTitle }</div>

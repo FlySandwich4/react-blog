@@ -4,6 +4,7 @@ import "./static/css/Menu.css"
 
 /**
  * The Menu always dispalys on the left side of the page
+ * @return a jsx template, the menu template.
  */
 const Menu = () => {
     const imgData = "https://media.graphassets.com/wCNVDswRFW3qxs1ZQfTw?_gl=1*1nq3x2h*_ga*ODYyMDQ2OTU3LjE2OTQ2NDM5NTM.*_ga_G6FYGSYGZ4*MTY5NTQwNzY1OS4xOC4xLjE2OTU0MDc3MzQuNjAuMC4w";
@@ -41,7 +42,8 @@ const Menu = () => {
             <div className="spacer"><br/><br/><br/><br/></div>
             <img className="myphoto" src={ imgData }></img>
             <Link to="/" onClick={ mobileClickLink }>Home</Link>    
-            <Link to="/my-first-project" onClick={ mobileClickLink }>www</Link>
+            <Link to="/project" onClick={ mobileClickLink}>Projects</Link>
+            <Link to="/project/my-first-project" onClick={ mobileClickLink }>www</Link>
         </div>
     </div>)
 }

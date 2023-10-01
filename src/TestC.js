@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
-import SingleBlog from "./SingleBlog";
+import {BlogRender, CatRender} from "./PageRender";
 import TCodeBox from "./templates/TCodeBox";
 import useFetchSingleBlog from "./useFetch.js";
 
@@ -13,7 +13,6 @@ const Test = () => {
             <div className="Content">
                 Testing Case:
                 <div>Hello</div>
-                <SingleBlog/>
                 <TCodeBox title={"computer.js"} content={str}/>
                 <TCodeBox title={"aaa"} content={str}/>
                 <TCodeBox title={2} content={str+str}/>

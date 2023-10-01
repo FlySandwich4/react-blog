@@ -14,10 +14,10 @@ const componentMap = {
     "TTest": () => <div>Test</div>,
 };
 
-const RenderComponent = (content) => {
+const ComponentRender = (content) => {
     const Component = componentMap[content.type] || (() => <div>Component not found</div>);
     return <Component {...content} />;
 };
 
  
-export default RenderComponent;
+export default ComponentRender;
