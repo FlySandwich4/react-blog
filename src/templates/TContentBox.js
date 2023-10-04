@@ -11,26 +11,33 @@ const TContentBox = (props) => {
     const contentContent = props.content;
 
     // Check if contentContent is a array of templates
-    console.log(contentContent);
-    console.log(Array.isArray(contentContent));
     if (Array.isArray(contentContent)) {
         return (
             <div class="TContentBox_Container">
-                <div> {contentTitle} </div>
-                {
-                    contentContent.map((eachContent) => (
-                        <div>
-                            { console.log(typeof(eachContent)) }
-                            <ComponentRender data={eachContent}/>
-                        </div>
-                    ))
-                }
+                <div className="TContentBox_Title"> { contentTitle } </div>
+                <div className="TContentBox_Content">
+                    <div className="TContentBox_Left"></div>
+                    <div className="TContentBox_Right">
+                    {
+                        contentContent.map((eachContent) => (
+                            <div>
+                                { console.log(typeof(eachContent)) }
+                                <ComponentRender data={ eachContent }/>
+                            </div>
+                        ))
+                    }
+                    </div>
+                </div>  
             </div>
         )
     } else {
         return (
-            <div>
-                {contentContent}
+            <div className="TContentBox_Container">
+                <div className="TContentBox_Title"> { contentTitle } </div>
+                <div className="TContentBox_Content"> 
+                    <div className="TContentBox_Left"></div>
+                    <div className="TContentBox_Right"> { contentContent } </div>
+                </div>
             </div>
         )
     }

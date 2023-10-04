@@ -1,5 +1,29 @@
 .TContentBox_Container {
-    margin: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
     width: auto;
-    background-color: green;
+}
+
+.TContentBox_Title {
+    max-width: fit-content;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.TContentBox_Content {
+    width: 100%;
+    display: flex;
+}
+
+.TContentBox_Left {
+    width: 0.3rem;
+    height: auto;
+    background-color: black;
+    transform: translateX(10px);
+}
+
+.TContentBox_Right {
+    flex: 1;
+    margin-left: 20px;
 }

@@ -11,15 +11,19 @@ import useFetchSingleBlog from "./useFetch.js";
 const Test = () => {
     const str = "cout<<abc \n  \n \n \n \n\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaa\naaa\naaa\naaa \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \naaa \naaa\n\n\naaaaaa";
     return (
-            <div className="">
-                Testing Case:
-                <div>Hello</div>
-                <TContentBox title="content" content={[
-                    {"type":"TCodeBox","title":"hi2", "content":"cout << endl"},
-                    {"type":"TContentBox","title":"hi", "content":[
-                        {"type":"TCodeBox","title":"hi3", "content":"cout << endl"}
+            <div>
+                <TContentBox title="Title1" content={[
+                    {"type":"TCodeBox","title":"Code1", "content":"cout << endl"},
+                    {"type":"TContentBox","title":"subTitle", "content":[
+                        {"type":"TCodeBox","title":"codeTItle", "content":"cout << endl"},
+                        {"type":"TParagraph","title":"codeTItle", "content":"This is a paragraph, but idk whether \n works"},
+                        {"type":"TParagraph","title":"codeTItle", "content":"cout << endl"}
+                    ]},
+                    {"type":"TParagraph", "content":"idk What is this line !"},
+                    {"type":"TContentBox","title":"subTitle2", "content":[
+                        {"type":"TCodeBox","title":"codeTItle", "content":"cout << endl\nhtml is shit\n I don't like python"}
                     ]}
-                    ]}/>
+                ]}/>
                 {/* <TCodeBox title={"computer.js"} content={str}/>
                 <TCodeBox title={"aaa"} content={str}/>
                 <TCodeBox title={2} content={str+str}/> */}
