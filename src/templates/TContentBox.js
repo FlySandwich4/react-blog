@@ -2,6 +2,17 @@ import { type } from "@testing-library/user-event/dist/type";
 import ComponentRender from "../ComponentRender";
 import "./templates_css/TContentBox.css";
 
+
+/**
+ * json data should be like:
+ * {
+ *      "type" : "TContentBox",
+ *      "title" : "...",
+ *      "content" : [...] or "..."
+ * }
+ * @param {*} props title, content
+ * @returns 
+ */
 const TContentBox = (props) => {
     // Params' data you need
     const contentTitle = props.title;

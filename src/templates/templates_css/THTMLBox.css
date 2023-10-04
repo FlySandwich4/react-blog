@@ -1,21 +1,15 @@
 .THTMLBox_Container {
     margin-top: 10px;
     margin-bottom: 10px;
-    display: flex;
-    flex-wrap: warp;
 }
 
 /* highlight the text : use html mark tag => <strong> word </strong> */
 .THTMLBox_Container mark {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
     background-color: yellow;
 }
 
 /* strength the text : use html strong tag => <strong> word </strong> */
 .THTMLBox_Container strong {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
     font-weight: 800;
 }
 

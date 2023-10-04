@@ -1,7 +1,9 @@
 import TCodeBox from "./templates/TCodeBox";
 import TContentBox from "./templates/TContentBox";
 import THTMLBox from "./templates/THTMLBox";
+import TList from "./templates/TList";
 import TParagraph from "./templates/TParagraph";
+import TTitle from "./templates/TTitle";
 
 /* 
 Purpose:
@@ -17,6 +19,8 @@ const componentMap = {
     "TContentBox" :     (data => <TContentBox {...data}/>),
     "TParagraph" :      (data => <TParagraph {...data}/>),
     "THTMLBox" :        (data => <THTMLBox {...data}/>),
+    "TTitle" :          (data => <TTitle {...data}/>),
+    "TList" :           (data => <TList {...data}/>),
     "TTest": () => <div>Test</div>,
 };
 

@@ -1,0 +1,54 @@
+[
+    {
+        "type": "TTitle",
+        "title": "Java web server with MySQL fabflix web application"
+    },
+    {
+        "type": "TContentBox",
+        "title": "Introduction",
+        "content": [
+            {
+                "type": "THTMLBox",
+                "content": "This is a web application that sells movies online. Actually it is not only a web app, it contains a Android app as well. It contains a lot of different aspects and it is one of the projects that I am most satisfied with. I finished everything by myself: frontend (Web and android), backend (Java Tomcat Server), and Database (Mysql)"
+            }
+        ]
+    },
+    {
+        "type": "TContentBox",
+        "title": "Information",
+        "content": [
+            {
+                "type": "THTMLBox",
+                "title": "project name",
+                "content": "ProjectName: Fabflix"
+            },
+            {
+                "type": "THTMLBox",
+                "title": "project timeline",
+                "content": "Timeline: March 2023 - June 2023"
+            },
+            {
+                "type": "THTMLBox",
+                "title": "project tech stacks",
+                "content": "Tech Stacks: <br>Frontend: <strong>HTML, CSS, JavaScript, Android(Dev tool in Intellij)</strong><br> Backend: <strong>Java, Tomcat, AWS, MySQL, Maven</strong>"
+            }
+        ]
+    },
+    {
+        "type": "TContentBox",
+        "title": "Content",
+        "content": [
+            {
+                "type": "TList",
+                "title": "content",
+                "content": [
+                    "Developed web and Android apps for movie sales with frontend AJAX, Google reCAPTCHA API, autocomplete",
+                    "Implemented <mark>24+</mark> backend APIs, includingsearch, sessions, password encryption features with Java Tomcat server",
+                    "Designed and optimized a MySQL database, ensuring protection against SQL injection using prepared statements ",
+                    "Enhanced backend data with XML parser and performance through SQL query modification, JDBC pooling, MySQL Master-Slave Replication, stored procedures, and Load Balancer",
+                    "Deployed the application with a more than 400,000 records database to AWS, GCP servers, achieving throughput of more than <mark>17,000</mark> requests per second as tested by JMeter."
+                ]
+            }
+        ]
+    }
+]

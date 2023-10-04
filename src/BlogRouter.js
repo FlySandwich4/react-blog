@@ -8,6 +8,7 @@ const BlogRouter = () => {
       <Router>
         <Routes>
             <Route path="" element={ <Navigate to="/home" /> }></Route>
+            <Route path="/test" element={ <Test/> }></Route>
             <Route path="/:cat" element={ <CatRender />}></Route>
             <Route path="/:cat/:slug" element={ <BlogRender />}></Route>
             

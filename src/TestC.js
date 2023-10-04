@@ -1,33 +1,26 @@
-import { Link } from "react-router-dom";
 import Menu from "./Menu";
-import {BlogRender, CatRender} from "./PageRender";
-import TCodeBox from "./templates/TCodeBox";
-import TContentBox from "./templates/TContentBox";
-import useFetchSingleBlog from "./useFetch.js";
+import ComponentRender from "./ComponentRender";
+import jsonData from "./static/test.json";
+import { json } from "react-router-dom";
 
 /**
  * Test templates, pages here
  */
 const Test = () => {
-    const str = "cout<<abc \n  \n \n \n \n\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaa\naaa\naaa\naaa \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \naaa \naaa\n\n\naaaaaa";
+    const content = jsonData;
     return (
-            <div>
-                <TContentBox title="Title1" content={[
-                    {"type":"TCodeBox","title":"Code1", "content":"cout << endl"},
-                    {"type":"TContentBox","title":"subTitle", "content":[
-                        {"type":"TCodeBox","title":"codeTItle", "content":"cout << endl"},
-                        {"type":"TParagraph","title":"codeTItle", "content":"This is a paragraph, but idk whether \n works"},
-                        {"type":"TParagraph","title":"codeTItle", "content":"cout << endl"}
-                    ]},
-                    {"type":"TParagraph", "content":"idk What is this line123 !"},
-                    {"type":"TContentBox","title":"subTitle2", "content":[
-                        {"type":"THTMLBox","title":"codeTItle", "content":"<strong> something </strong> aaa ads abs <code>highLight</code>"}
-                    ]}
-                ]}/>
-                {/* <TCodeBox title={"computer.js"} content={str}/>
-                <TCodeBox title={"aaa"} content={str}/>
-                <TCodeBox title={2} content={str+str}/> */}
-            </div>);
+        <div className='DisplayBox' >
+            {/* DisplayBox: Everything display in this box, CSS in 'index.css', set to 100vw, 100vh */}  
+            <Menu />
+            <div className="ContentBox">
+                <div className="Content">
+                    {content && content.map((each) => (
+                        <div key={each.title}> <ComponentRender data={each}/> </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
 }
  
 export default Test;

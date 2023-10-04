@@ -1,0 +1,9 @@
+.TTitle_Container {
+    width: 100%;
+    background-color: rgb(240, 208, 209);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
