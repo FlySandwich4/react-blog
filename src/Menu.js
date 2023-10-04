@@ -1,18 +1,23 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "./static/css/Menu.css"
+import { Link, useParams } from "react-router-dom";
+import "./static/css/Menu.css";
+import iconIMG from "./static/img/yueZ.jpeg";
+
 
 /**
  * The Menu always dispalys on the left side of the page
  * @return a jsx template, the menu template.
  */
 const Menu = () => {
-    const imgData = "https://media.graphassets.com/wCNVDswRFW3qxs1ZQfTw?_gl=1*1nq3x2h*_ga*ODYyMDQ2OTU3LjE2OTQ2NDM5NTM.*_ga_G6FYGSYGZ4*MTY5NTQwNzY1OS4xOC4xLjE2OTU0MDc3MzQuNjAuMC4w";
+    const { cat } = useParams();
+    const slugs = ["home", "project", "experience", "leetcode"];
     const sessionVal = sessionStorage.getItem("blogMenuOpen");
+    // initBool val:
     // -    When User is using mobile, always close the menu when user first visit the page
     // -    When User is using PC, set the menu status based on the session Val, 
     //      if session Val === null, set the menu open as default
     const initBool = window.innerWidth < 800 ? false : sessionVal === null ? true : sessionVal === "true" ? true : false;
+    console.log(initBool);
     const [isMenuOpen, setIsMenuOpen] = useState(initBool);
 
     const toggleMenu = () => {
@@ -40,10 +45,17 @@ const Menu = () => {
         <button className={ menuButtonClass } onClick={ toggleMenu }> { menuButtonText } </button>
         <div className= { menuClass }>
             <div className="spacer"><br/><br/><br/><br/></div>
-            <img className="myphoto" src={ imgData }></img>
-            <Link to="/" onClick={ mobileClickLink }>Home</Link>    
-            <Link to="/project" onClick={ mobileClickLink}>Projects</Link>
-            <Link to="/project/my-first-project" onClick={ mobileClickLink }>www</Link>
+            <img className="myphoto" src={iconIMG}></img>
+            <br></br>
+            {
+                slugs.map((eachCat) => (
+                    <Link className={cat === eachCat ? "Menu_LinkSelected Menu_Link" : "Menu_Link"} 
+                    to={`/${eachCat}`} key={eachCat}
+                    onClick={ mobileClickLink }>
+                        { `▸ ${eachCat}` }
+                    </Link>
+                ))
+            }
         </div>
     </div>)
 }

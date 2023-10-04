@@ -5,18 +5,51 @@ a {
     color: black;
 }
 
-.TBlogCard_Link h1,
-.TBlogCard_Link h2,
+.TBlogCard_Link h1 {
+    margin: 0;
+}
+
 .TBlogCard_Link h3 {
     margin: 0;
+    margin-top: 10px;
 }
 
 
 .TBlogCard_Link {
     margin: 20px;
-    width: auto;
+    width: 100%;
+    display: inline-block;
 }
 
 .TBlogCard_Container {
     background-color: rgb(240, 208, 209);
+    padding: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.TBlogCard_Container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0, 0.5);
+}
+
+.TBlogCard_Bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.TBlogCard_Title {
+    font-size: 1.7rem;
+    flex: 1;
+    min-width: fit-content;
+}
+
+.TBlogCard_PostDate {
+    text-align: end;
+}
+
+.TBlogCard_Info {
+    padding: 2px;
+    border-radius: 5px;
+    background-color: white;
 }

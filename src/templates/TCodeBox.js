@@ -5,6 +5,7 @@ const TCodeBox = (props) => {
     // Params' data you need
     const codeTitle = props.title;
     const codeContent = props.content;
+    console.log("hi");
 
     // Fold function
     const [isFold, setIsFold] = useState(false);

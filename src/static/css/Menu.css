@@ -79,6 +79,30 @@ Used by Menu.js
   cursor: pointer;
 }
 
+.myphoto {
+  width: 200px;
+  border-radius: 100%;
+}
+
+.Menu_Link {
+  width: 200px;
+  text-align: start;
+  font-size: 24px;
+  margin: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.Menu_Link:hover {
+  color: rgb(234, 234, 234);
+  transform: scale(1.1);
+}
+
+.Menu_LinkSelected {
+  color: rgb(234, 234, 234);
+}
+
 
 /* 
 Scroll Bar's CSS Starting from this line
@@ -107,6 +131,3 @@ Scroll Bar's CSS Starting from this line
   border-radius: 10px;
 }
 
-.myphoto {
-  width: 50%;
-}

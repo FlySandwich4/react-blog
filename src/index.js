@@ -16,14 +16,11 @@ const client = new ApolloClient({
 
 
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ApolloProvider client={client}>
-      {/* DisplayBox: Everything display in this box, CSS in 'index.css', set to 100vw, 100vh */}
-      <div className='DisplayBox'>
         <BlogRouter />
-      </div>
     </ApolloProvider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 

@@ -1,4 +1,5 @@
 import TCodeBox from "./templates/TCodeBox";
+import TContentBox from "./templates/TContentBox";
 
 /* 
 Purpose:
@@ -11,12 +12,16 @@ Params:
 
 const componentMap = {
     "TCodeBox": ({ title, content }) => <TCodeBox title={title} content={content} />,
+    "TContentBox" : ((data) => <TContentBox {...data}/>),
     "TTest": () => <div>Test</div>,
 };
 
-const ComponentRender = (content) => {
-    const Component = componentMap[content.type] || (() => <div>Component not found</div>);
-    return <Component {...content} />;
+const ComponentRender = (props) => {
+
+    console.log("data");
+    const data = props.data;
+    const Component = componentMap[data.type] || (() => <div>Component not found</div>);
+    return <Component {...data} />;
 };
 
  
