@@ -10,8 +10,7 @@ const TBlogCard = (props) => {
                     <div className="TBlogCard_Title">{ props.title }</div>
                     <div className="TBlogCard_PostDate">{ props.postDate }</div>
                 </div>
-                
-                <hr></hr>
+                <div className="TBlogCard_Seperate"></div>
                 <div> <span className="TBlogCard_Info">Description</span> { props.description }  </div>
             
             </div>

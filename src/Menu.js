@@ -45,14 +45,19 @@ const Menu = () => {
         <button className={ menuButtonClass } onClick={ toggleMenu }> { menuButtonText } </button>
         <div className= { menuClass }>
             <div className="spacer"><br/><br/><br/><br/></div>
-            <img className="myphoto" src={iconIMG}></img>
+            <img className="Menu_Photo" src={ iconIMG }></img>
             <br></br>
+            <div className="Menu_Intro">
+                <div>Yue Wu</div>
+                <div className="Menu_Motto">Think Outside The Box</div>
+
+            </div>
             {
                 slugs.map((eachCat) => (
-                    <Link className={cat === eachCat ? "Menu_LinkSelected Menu_Link" : "Menu_Link"} 
-                    to={`/${eachCat}`} key={eachCat}
+                    <Link className={ cat === eachCat ? "Menu_LinkSelected Menu_Link" : "Menu_Link" } 
+                    to={`/${ eachCat }`} key={ eachCat }
                     onClick={ mobileClickLink }>
-                        { `▸ ${eachCat}` }
+                        { `▸ ${ eachCat }` }
                     </Link>
                 ))
             }

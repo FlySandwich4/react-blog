@@ -19,9 +19,9 @@ const Test = () => {
                         {"type":"TParagraph","title":"codeTItle", "content":"This is a paragraph, but idk whether \n works"},
                         {"type":"TParagraph","title":"codeTItle", "content":"cout << endl"}
                     ]},
-                    {"type":"TParagraph", "content":"idk What is this line !"},
+                    {"type":"TParagraph", "content":"idk What is this line123 !"},
                     {"type":"TContentBox","title":"subTitle2", "content":[
-                        {"type":"TCodeBox","title":"codeTItle", "content":"cout << endl\nhtml is shit\n I don't like python"}
+                        {"type":"THTMLBox","title":"codeTItle", "content":"<strong> something </strong> aaa ads abs <code>highLight</code>"}
                     ]}
                 ]}/>
                 {/* <TCodeBox title={"computer.js"} content={str}/>

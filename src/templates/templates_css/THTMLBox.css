@@ -1,0 +1,45 @@
+.THTMLBox_Container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: warp;
+}
+
+/* highlight the text : use html mark tag => <strong> word </strong> */
+.THTMLBox_Container mark {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: yellow;
+}
+
+/* strength the text : use html strong tag => <strong> word </strong> */
+.THTMLBox_Container strong {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-weight: 800;
+}
+
+/* strength the text with red color : use S_R class */
+.THTMLBox_Container .S_R {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    color: red;
+}
+
+/* create a block for the short code. Use TCodeBox for long code : use html code tag => <code> someCode <code> */
+.THTMLBox_Container code {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background-color:rgb(234,234,234);
+    padding: 2px;
+    border-radius: 4px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+/* !!! Strat your custom block here with the template, which makes sure the space between words */
+.THTMLBox_YourOwnBlock {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}

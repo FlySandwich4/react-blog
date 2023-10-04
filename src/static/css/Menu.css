@@ -79,17 +79,32 @@ Used by Menu.js
   cursor: pointer;
 }
 
-.myphoto {
+.Menu_Photo {
   width: 200px;
   border-radius: 100%;
+}
+
+.Menu_Intro {
+  width: 200px;
+  text-align: center;
+  border: 0;
+  padding-bottom: 10px;
+  border-bottom: 5px;
+  border-style: solid;
+  font-size: 1.8rem;
+}
+
+.Menu_Motto {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgb(24, 61, 54);
 }
 
 .Menu_Link {
   width: 200px;
   text-align: start;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 5px;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   transition: color 0.2s, transform 0.2s;
 }
@@ -101,6 +116,7 @@ Used by Menu.js
 
 .Menu_LinkSelected {
   color: rgb(234, 234, 234);
+  
 }
 
 
