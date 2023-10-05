@@ -3,7 +3,7 @@ import "./templates_css/TImgTextBox.css";
 /**
  * A Box that dispaly a rounded img on the left and text on the right
  * The right text is in THTMLBox template, read "THTMLBox.js" for more information
- * @param {*} props : imgSrc(source of the img), content(your text, or other templates)
+ * @param {*} props : imgSrc(source of the img), content(text)
  * @returns jsx
  */
 const TImgTextBox = (props) => {

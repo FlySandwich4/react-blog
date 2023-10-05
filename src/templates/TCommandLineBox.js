@@ -2,7 +2,7 @@ import "./templates_css/TCommandLineBox.css";
 
 /**
  * A command line style text box, green text black background
- * @param {*} props : content(text, or other templates)
+ * @param {*} props : content(text)
  * @returns jsx
  */
 const TCommandLineBox = (props) => {

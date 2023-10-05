@@ -1,6 +1,8 @@
 import TCodeBox from "./templates/TCodeBox";
+import TCommandLineBox from "./templates/TCommandLineBox";
 import TContentBox from "./templates/TContentBox";
 import THTMLBox from "./templates/THTMLBox";
+import TImgTextBox from "./templates/TImgTextBox";
 import TList from "./templates/TList";
 import TParagraph from "./templates/TParagraph";
 import TTitle from "./templates/TTitle";
@@ -21,6 +23,8 @@ const componentMap = {
     "THTMLBox" :        (data => <THTMLBox {...data}/>),
     "TTitle" :          (data => <TTitle {...data}/>),
     "TList" :           (data => <TList {...data}/>),
+    "TImgTextBox" :           (data => <TImgTextBox {...data}/>),
+    "TCommandLineBox" :           (data => <TCommandLineBox {...data}/>),
     "TTest": () => <div>Test</div>,
 };
 

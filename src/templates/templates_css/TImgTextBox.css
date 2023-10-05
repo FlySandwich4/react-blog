@@ -11,6 +11,7 @@
     min-width: 100px;
     max-width: 270px;
     width: 30%;
+    aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
