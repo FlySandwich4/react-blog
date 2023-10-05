@@ -98,7 +98,7 @@ const CustomRender = () => {
             <Menu />
             <div className="ContentBox"> 
                 <div className="Content"> 
-
+                
                     {/* Do your own rendering here ... */}
 
                 </div>
