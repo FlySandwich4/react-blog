@@ -60,7 +60,7 @@ const Home = () => {
 
     // For the blog project information
     const thisProjectInfo = <THTMLBox content={`
-        <h3> About how this blog works :</h3> <br />
+        <h3> About this blog :</h3> <br />
         <div> 
             This blog project is a fullstack project, using react for the frontend 
             and graphCMS (Hygraph) as backend. I used GraphQL for the communications
@@ -71,13 +71,21 @@ const Home = () => {
             <mark><a href="https://github.com/FlySandwich4/react-blog"> -> LINK HERE </a></mark>
     `} />;
 
+    // For personal website links info
+    const urlInfo = <THTMLBox content={`
+        <h3> <a href="https://github.com/FlySandwich4"> Github </a> </h3>
+        <h3> <a href="https://www.linkedin.com/in/yue-wu-b2bab8225/"> LinkedIn </a> </h3>
+        <h3> <a href="https://leetcode.com/FlySandwich/"> LeetCode </a> </h3>
+        <h3> Email: liamwu4@gmail.com </h3>
+    `} />
+    
     return ( 
         <div>    
             {/* postDate here is just for fixing the TTitle template's props name, not a real date here */}
             <TTitle title="Hi, This is Yue Wu, or Liam" postDate="* FlySandwich is also me"/>
             <TContentBox title="About Me" content={ about }/>
             <TImgTextBox imgSrc={sandwich} content={ thisProjectInfo }/>
-            
+            <TContentBox title="Links and Contacts" content={ urlInfo } />
         </div>
     );
 }
