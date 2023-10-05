@@ -12,7 +12,7 @@ const TBlogCard = (props) => {
             <div className="TBlogCard_Container">
                 <div className="TBlogCard_Bar">
                     <div className="TBlogCard_Title">{ props.title }</div>
-                    <div className="TBlogCard_PostDate">{ props.postDate }</div>
+                    <div className="TBlogCard_PostDate">{ props.content ? props.content[0].postDate : null}</div>
                 </div>
                 <div className="TBlogCard_Seperate"></div>
                 <div> <span className="TBlogCard_Info">Description</span> { props.description }  </div>

@@ -16,7 +16,6 @@ const useFetchSingleBlog = (slug, cat) => {
           slug
           title
           content
-          postDate
         }
       }
     `
@@ -33,8 +32,8 @@ const useFetchAllBlogs = (cat) => {
     ${cat}s {
       slug
       title
-      postDate
       description
+      content
     }
   }  
   `

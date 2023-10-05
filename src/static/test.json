@@ -2,18 +2,8 @@
     {
         "type": "TTitle",
         "postDate": "2023-2-13",
-        "description": "A Fabflix web app selling movies, including 100k+ movies data and complete functionalities.",
-        "title": "Java web server with MySQL fabflix web application"
-    },
-    {
-        "type": "TContentBox",
-        "title": "Introduction",
-        "content": [
-            {
-                "type": "THTMLBox",
-                "content": "This is a web application that sells movies online. Actually it is not only a web app, it contains a Android app as well. It contains a lot of different aspects and it is one of the projects that I am most satisfied with. I finished everything by myself: frontend (Web and android), backend (Java Tomcat Server), and Database (Mysql)"
-            }
-        ]
+        "description": "I worked for VisionX LLC as an Fullstack Developer",
+        "title": "VisionX LLC Fullstack Developer"
     },
     {
         "type": "TContentBox",
@@ -21,18 +11,19 @@
         "content": [
             {
                 "type": "THTMLBox",
-                "title": "project name",
-                "content": "ProjectName: Fabflix"
+                "content": "<h3>Job Title: </h3><li>Fullstack Developer</li>"
             },
             {
                 "type": "THTMLBox",
-                "title": "project timeline",
-                "content": "Timeline: March 2023 - June 2023"
+                "content": "<h3>Timeline: </h3><li>Fulltime : June 2022 - Sep 2022</li> <li>Parttime : Sep 2022 - current</li>"
             },
             {
                 "type": "THTMLBox",
-                "title": "project tech stacks",
-                "content": "Tech Stacks: <br>Frontend: <strong>HTML, CSS, JavaScript, Android(Dev tool in Intellij)</strong><br> Backend: <strong>Java, Tomcat, AWS, MySQL, Maven</strong>"
+                "content": "<h3>Location: </h3><li>San Jose, CA</li>"
+            },
+            {
+                "type": "THTMLBox",
+                "content": "<h3>Tech Stacks: </h3><li>Django, Python, MongoDB, SQLite</li>"
             }
         ]
     },
@@ -41,15 +32,32 @@
         "title": "Content",
         "content": [
             {
-                "type": "TList",
-                "title": "innerContent",
-                "content": [
-                    "Developed web and Android apps for movie sales with frontend AJAX, Google reCAPTCHA API, autocomplete",
-                    "Implemented <mark>24+</mark> backend APIs, including search, sessions, password encryption features with Java Tomcat server",
-                    "Designed and optimized a MySQL database, ensuring protection against SQL injection using prepared statements ",
-                    "Enhanced backend data with XML parser and performance through SQL query modification, JDBC pooling, MySQL Master-Slave Replication, stored procedures, and Load Balancer",
-                    "Deployed the application with a more than 400,000 records database to AWS, GCP servers, achieving throughput of more than <mark>17,000</mark> requests per second as tested by JMeter."
-                ]
+                "type" : "TContentBox",
+                "title" : "Web Development",
+                "content" : [{
+                    "type": "TList",
+                    "title": "innerContent",
+                    "content": [
+                        "Redesigned, implemented, and updated the company's official website using Python Django framework",
+                        "Developed the web page using HTML, CSS, JavaScript, and adapted the web page to mobile users",
+                        "Integrated SQLite Database to store views and handle backend API calls through Django's HTML module",
+                        "Deployed the website to an AWS server using Nginx as the web server, resulting in over 30,000+ views"
+                    ]
+                }]
+            },
+            {
+                "type" : "TContentBox",
+                "title" : "Restful APIs Implementation",
+                "content" : [{
+                    "type": "TList",
+                    "title": "innerContent",
+                    "content": [
+                        "Designed and update backend RESTful APIs to meet frontend's requirements",
+                        "Created and optimized databases storing users, experts, and forums in MongoDB",
+                        "Implemented RESTful APIs including modifying databases, search, and ChatGPT API usage",
+                        "Successfully updated both databases and 7 APIs, adequately managed data, and return structured JSON responses."
+                    ]
+                }]
             }
         ]
     },
@@ -60,7 +68,7 @@
             {
                 "type": "THTMLBox",
                 "title": "innerConclusion",
-                "content": "I learned a lot of new skills in this big project. I finished everything by myself without grouping. During the project, new knowledge flooded my mind. Also, I encountered a lot of problems including SQL query performance optimization, API development, and frontend design… I am really proud of this project! In JMeter, it showed me that my website can handle 17,000 requests per second, which is an incredible performance."
+                "content": "During the job, I learned Django a lot. It is a framework that can used to develop both frontend and backend. I feel amazing when I first study this framework since it has some new things compared with other frameworks. <br /> This job also improve my teamwork ability. By working with a lot of people, I acquired more knowledge on project management and organization. I tried to organize my project better and coding more clear in the future projects, where the project “Duck Duck Ride” is an example. Making project more organized is better for people to develop."
             }
         ]
     }

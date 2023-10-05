@@ -13,14 +13,14 @@ const Peer = () => {
         <TImgTextBox imgSrc={ jerryImg } content={ 
             <THTMLBox content={`
                 <a href=${jerryWeb}> <h1>Jialuo (Jerry) Hu</h1> </a>
-                <div>Professional Coding Squirrel</div>
+                Research Assistant @ STAR Lab & Truss Lab | CS @ UC Irvine '24 | ICS Honors Program
             `}/> 
         }/> 
         <br></br>
         <TImgTextBox imgSrc={ davidImg } content={ 
             <THTMLBox content={`
                 <a href=${davidWeb}> <h1>Seongjin (David) Yoon</h1> </a>
-                ni hao ni hao
+                Research Assistant @ Cloudberry | CS @ UC Irvine '24 | ICS Honors Program
             `}/> 
         }/> 
     </div> );
