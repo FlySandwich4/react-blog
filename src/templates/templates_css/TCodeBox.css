@@ -1,10 +1,7 @@
 .TCodeBox_Container {
-    width: 100vw;
-}
-
-.TCodeBox_CodeBlock {
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: auto;
-    margin: 20px;
     background-color: rgb(234,234,234);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -44,8 +41,6 @@
     font-size: 1rem;
     overflow-y: scroll;
 }
-
-
 
 .TCodeBox_OpenCodeContent {
     max-height: 90vh;

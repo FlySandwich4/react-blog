@@ -1,0 +1,75 @@
+[
+    {
+        "type": "TTitle",
+        "postDate": "2023-2-13",
+        "description": "I worked for VisionX LLC as an Fullstack Developer",
+        "title": "VisionX LLC Fullstack Developer"
+    },
+    {
+        "type": "TContentBox",
+        "title": "Information",
+        "content": [
+            {
+                "type": "THTMLBox",
+                "content": "<h3>Job Title: </h3><li>Fullstack Developer</li>"
+            },
+            {
+                "type": "THTMLBox",
+                "content": "<h3>Timeline: </h3><li>Fulltime : June 2022 - Sep 2022</li> <li>Parttime : Sep 2022 - current</li>"
+            },
+            {
+                "type": "THTMLBox",
+                "content": "<h3>Location: </h3><li>San Jose, CA</li>"
+            },
+            {
+                "type": "THTMLBox",
+                "content": "<h3>Tech Stacks: </h3><li>Django, Python, MongoDB, SQLite</li>"
+            }
+        ]
+    },
+    {
+        "type": "TContentBox",
+        "title": "Content",
+        "content": [
+            {
+                "type" : "TContentBox",
+                "title" : "Web Development",
+                "content" : [{
+                    "type": "TList",
+                    "title": "innerContent",
+                    "content": [
+                        "Redesigned, implemented, and updated the company's official website using Python Django framework",
+                        "Developed the web page using HTML, CSS, JavaScript, and adapted the web page to mobile users",
+                        "Integrated SQLite Database to store views and handle backend API calls through Django's HTML module",
+                        "Deployed the website to an AWS server using Nginx as the web server, resulting in over 30,000+ views"
+                    ]
+                }]
+            },
+            {
+                "type" : "TContentBox",
+                "title" : "Restful APIs Implementation",
+                "content" : [{
+                    "type": "TList",
+                    "title": "innerContent",
+                    "content": [
+                        "Designed and update backend RESTful APIs to meet frontend's requirements",
+                        "Created and optimized databases storing users, experts, and forums in MongoDB",
+                        "Implemented RESTful APIs including modifying databases, search, and ChatGPT API usage",
+                        "Successfully updated both databases and 7 APIs, adequately managed data, and return structured JSON responses."
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "type": "TContentBox",
+        "title": "Conclusion",
+        "content": [
+            {
+                "type": "THTMLBox",
+                "title": "innerConclusion",
+                "content": "During the job, I learned Django a lot. It is a framework that can used to develop both frontend and backend. I feel amazing when I first study this framework since it has some new things compared with other frameworks. <br /> This job also improve my teamwork ability. By working with a lot of people, I acquired more knowledge on project management and organization. I tried to organize my project better and coding more clear in the future projects, where the project “Duck Duck Ride” is an example. Making project more organized is better for people to develop."
+            }
+        ]
+    }
+]
