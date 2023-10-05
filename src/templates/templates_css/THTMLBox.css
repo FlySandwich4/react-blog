@@ -3,6 +3,14 @@
     margin-bottom: 10px;
 }
 
+.THTMLBox_Container h1,
+.THTMLBox_Container h2,
+.THTMLBox_Container h3,
+.THTMLBox_Container h4,
+.THTMLBox_Container h5 {
+    margin: 0;
+}
+
 /* highlight the text : use html mark tag => <strong> word </strong> */
 .THTMLBox_Container mark {
     background-color: yellow;
@@ -11,6 +19,10 @@
 /* strength the text : use html strong tag => <strong> word </strong> */
 .THTMLBox_Container strong {
     font-weight: 800;
+}
+
+.THTMLBox_Container a {
+    text-decoration: underline;
 }
 
 /* strength the text with red color : use S_R class */

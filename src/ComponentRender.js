@@ -28,8 +28,14 @@ const componentMap = {
     "TTest": () => <div>Test</div>,
 };
 
+/**
+ * 
+ * @param {*} props : data(an object with specific format)
+ * @returns 
+ */
 const ComponentRender = (props) => {
     const data = props.data;
+    if (!data) return (<div>data is not an object with specific structure</div>);
     const Component = componentMap[data.type] || (() => <div>Component not found</div>);
     return <Component {...data} />;
 };
