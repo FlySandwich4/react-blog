@@ -1,0 +1,47 @@
+.TImgTextBox_Container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(130, 184, 173);
+    border-radius: 20px;
+}
+
+.TImgTextBox_Left {
+    min-width: 100px;
+    max-width: 270px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TImgTextBox_Img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.TImgTextBox_Right {
+    width: auto;
+    flex: 1;
+}
+
+.TImgTextBox_Content {
+    margin: 1rem;
+}
+
+/* @media screen and (min-width: 800px) {
+    .TImgTextBox_Left {
+        width: 100%;
+    }
+    .TImgTextBox_Right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+} */

@@ -6,6 +6,7 @@ import TBlogCard from "./templates/TBlogCard";
 import Test from "./TestC";
 import {useFetchSingleBlog, useFetchAllBlogs} from "./useFetch";
 import TTitle from "./templates/TTitle";
+import Home from "./Home";
 
 /**
  * 
@@ -61,7 +62,7 @@ const CatRender = () => {
             <Menu />
             <div className="ContentBox">
                 <div className="Content">
-                    <TTitle title="Nothing So Far ~" />
+                    <Home />
                 </div>
             </div>
         </div>

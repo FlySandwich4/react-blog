@@ -2,6 +2,7 @@
     {
         "type": "TTitle",
         "postDate": "2023-2-13",
+        "description": "A Fabflix web app selling movies, including 100k+ movies data and complete functionalities.",
         "title": "Java web server with MySQL fabflix web application"
     },
     {
