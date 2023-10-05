@@ -10,7 +10,7 @@ import "./templates_css/TContentBox.css";
  *      "title" : "...",
  *      "content" : [{}, {}, ...] or "..."
  * }
- * @param {*} props title(title of the content), content(text or templates)
+ * @param {*} props: title(title of the content), content(text or templates)
  * @returns 
  */
 const TContentBox = (props) => {

@@ -7,7 +7,8 @@ import "./templates_css/THTMLBox.css"
  * !!! This Component is only for making highlight some parts of the text easier, not for making all blogs' content into html format
  * !!! Using <span> tags or other tags and set class name within it. check the THTMLBox.css and customize your own way of decorating text
  * Example: props.content = "<strong> This is strong </strong> this is regular words <code> This is code </code> <mark> this is highlight </mark>"
- * @param {*} props, includes your content, which is a html string
+ * 
+ * @param {*} props: content(your content, which is a html string)
  * @returns a jsx
  */
 const THTMLBox = (props) => {

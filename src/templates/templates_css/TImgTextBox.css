@@ -26,23 +26,16 @@
 }
 
 .TImgTextBox_Right {
-    width: auto;
     flex: 1;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .TImgTextBox_Content {
-    margin: 1rem;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
 }
-
-/* @media screen and (min-width: 800px) {
-    .TImgTextBox_Left {
-        width: 100%;
-    }
-    .TImgTextBox_Right {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    
-} */
