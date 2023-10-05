@@ -36,6 +36,7 @@ pre {
 @media screen and (min-width: 800px) {
   .Content {
     width: 70%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -43,6 +44,7 @@ pre {
 @media screen and (max-width: 800px) {
   .Content {
     width: 90%;
+    margin-bottom: 2rem;
   }
 }
 

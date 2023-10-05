@@ -7,7 +7,9 @@ const TList = (props) => {
             <ul>
                 {
                     props.content && props.content.map(eachLi => (
-                        <li><THTMLBox content={eachLi}/></li>
+                        Array.isArray(eachLi) ? 
+                            <TList content={eachLi}/> :
+                            <li key={eachLi}><THTMLBox content={eachLi}/></li>
                     ))
                 }
             </ul>

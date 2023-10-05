@@ -3,7 +3,18 @@
     background-color: rgb(240, 208, 209);
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 20px;
     text-align: center;
     font-size: 2.5rem;
+    position: relative;
+}
+
+.TTitle_Title {
+    padding: 20px;
+}
+
+.TTitle_Date {
+    font-size: 1.1rem;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }

@@ -25,8 +25,6 @@ const componentMap = {
 };
 
 const ComponentRender = (props) => {
-
-    console.log("data");
     const data = props.data;
     const Component = componentMap[data.type] || (() => <div>Component not found</div>);
     return <Component {...data} />;

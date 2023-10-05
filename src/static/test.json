@@ -1,6 +1,7 @@
 [
     {
         "type": "TTitle",
+        "postDate": "2023-2-13",
         "title": "Java web server with MySQL fabflix web application"
     },
     {
@@ -40,14 +41,25 @@
         "content": [
             {
                 "type": "TList",
-                "title": "content",
+                "title": "innerContent",
                 "content": [
                     "Developed web and Android apps for movie sales with frontend AJAX, Google reCAPTCHA API, autocomplete",
-                    "Implemented <mark>24+</mark> backend APIs, includingsearch, sessions, password encryption features with Java Tomcat server",
+                    "Implemented <mark>24+</mark> backend APIs, including search, sessions, password encryption features with Java Tomcat server",
                     "Designed and optimized a MySQL database, ensuring protection against SQL injection using prepared statements ",
                     "Enhanced backend data with XML parser and performance through SQL query modification, JDBC pooling, MySQL Master-Slave Replication, stored procedures, and Load Balancer",
                     "Deployed the application with a more than 400,000 records database to AWS, GCP servers, achieving throughput of more than <mark>17,000</mark> requests per second as tested by JMeter."
                 ]
+            }
+        ]
+    },
+    {
+        "type": "TContentBox",
+        "title": "Conclusion",
+        "content": [
+            {
+                "type": "THTMLBox",
+                "title": "innerConclusion",
+                "content": "I learned a lot of new skills in this big project. I finished everything by myself without grouping. During the project, new knowledge flooded my mind. Also, I encountered a lot of problems including SQL query performance optimization, API development, and frontend design… I am really proud of this project! In JMeter, it showed me that my website can handle 17,000 requests per second, which is an incredible performance."
             }
         ]
     }
