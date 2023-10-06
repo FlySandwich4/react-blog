@@ -16,6 +16,7 @@ const useFetchSingleBlog = (slug, cat) => {
           slug
           title
           content
+          postDate
         }
       }
     `
@@ -27,13 +28,17 @@ const useFetchSingleBlog = (slug, cat) => {
 
 
 const useFetchAllBlogs = (cat) => {
+  // I have a postDate field in the backend, which is a duplication
+  // the postDate in content exist, but not the same as this "orderBy : postDate_DESC"
+  // every template in this app which uses postDate is not from the postDate field 
   const query = gql`
   query MyQuery {
-    ${cat}s {
+    ${cat}s(orderBy : postDate_DESC) {
       slug
       title
       description
       content
+      postDate
     }
   }  
   `

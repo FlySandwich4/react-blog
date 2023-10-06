@@ -1,75 +1,99 @@
 [
     {
-        "type": "TTitle",
-        "postDate": "2023-2-13",
-        "description": "I worked for VisionX LLC as an Fullstack Developer",
-        "title": "VisionX LLC Fullstack Developer"
+      "type": "TTitle",
+      "postDate": "2023-2-13",
+      "description": "An IOS application makes travel easier, cheaper, and more economical.",
+      "title": "Duck Duck Ride IOS Mobile App"
     },
     {
-        "type": "TContentBox",
-        "title": "Information",
-        "content": [
-            {
-                "type": "THTMLBox",
-                "content": "<h3>Job Title: </h3><li>Fullstack Developer</li>"
-            },
-            {
-                "type": "THTMLBox",
-                "content": "<h3>Timeline: </h3><li>Fulltime : June 2022 - Sep 2022</li> <li>Parttime : Sep 2022 - current</li>"
-            },
-            {
-                "type": "THTMLBox",
-                "content": "<h3>Location: </h3><li>San Jose, CA</li>"
-            },
-            {
-                "type": "THTMLBox",
-                "content": "<h3>Tech Stacks: </h3><li>Django, Python, MongoDB, SQLite</li>"
-            }
-        ]
+      "type": "TContentBox",
+      "title": "Introduction",
+      "content": [
+        {
+          "type": "THTMLBox",
+          "content": "Our inspiration for building Duck Duck Ride stemmed from the desire to create an app that allows people to travel to new places at a cheaper cost. We realized that transportation expenses can be burdensome, especially for students and people who don't have access to a car. With Duck Duck Ride, we aim to make travel more accessible, affordable, and environmentally friendly."
+        }
+      ]
     },
     {
-        "type": "TContentBox",
-        "title": "Content",
-        "content": [
-            {
-                "type" : "TContentBox",
-                "title" : "Web Development",
-                "content" : [{
-                    "type": "TList",
-                    "title": "innerContent",
-                    "content": [
-                        "Redesigned, implemented, and updated the company's official website using Python Django framework",
-                        "Developed the web page using HTML, CSS, JavaScript, and adapted the web page to mobile users",
-                        "Integrated SQLite Database to store views and handle backend API calls through Django's HTML module",
-                        "Deployed the website to an AWS server using Nginx as the web server, resulting in over 30,000+ views"
-                    ]
-                }]
-            },
-            {
-                "type" : "TContentBox",
-                "title" : "Restful APIs Implementation",
-                "content" : [{
-                    "type": "TList",
-                    "title": "innerContent",
-                    "content": [
-                        "Designed and update backend RESTful APIs to meet frontend's requirements",
-                        "Created and optimized databases storing users, experts, and forums in MongoDB",
-                        "Implemented RESTful APIs including modifying databases, search, and ChatGPT API usage",
-                        "Successfully updated both databases and 7 APIs, adequately managed data, and return structured JSON responses."
-                    ]
-                }]
-            }
-        ]
+      "type": "TContentBox",
+      "title": "Information",
+      "content": [
+        {
+          "type": "THTMLBox",
+          "content": "<h3>Project Name: </h3><li>Duck Duck Ride</li>"
+        },
+        {
+          "type": "THTMLBox",
+          "content": "<h3>Timeline: </h3><li>Apr 2023</li>"
+        },
+        {
+          "type": "THTMLBox",
+          "content": "<h3>Location: </h3><li>UCLA Los Angeles, CA</li>"
+        },
+        {
+          "type": "THTMLBox",
+          "content": "<h3>Tech Stacks: </h3><li>React-Native, NodeJS, Express, MongoDB</li>"
+        }
+      ]
     },
     {
-        "type": "TContentBox",
-        "title": "Conclusion",
-        "content": [
+      "type": "TContentBox",
+      "title": "Content",
+      "content": [
+        {
+          "type": "TContentBox",
+          "title": "Frontend",
+          "content": [
             {
-                "type": "THTMLBox",
-                "title": "innerConclusion",
-                "content": "During the job, I learned Django a lot. It is a framework that can used to develop both frontend and backend. I feel amazing when I first study this framework since it has some new things compared with other frameworks. <br /> This job also improve my teamwork ability. By working with a lot of people, I acquired more knowledge on project management and organization. I tried to organize my project better and coding more clear in the future projects, where the project “Duck Duck Ride” is an example. Making project more organized is better for people to develop."
+              "type": "TList",
+              "title": "innerContent",
+              "content": [
+                "Assisted teammates for frontend React-Native development :",
+                [
+                  "Written API document of how to use backend Restful APIs",
+                  "Adjusted CSS style for the app",
+                  "Page logic and buttons functionalities",
+                  "Google map api usage"
+                ]
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "type": "TContentBox",
+          "title": "Backend",
+          "content": [
+            {
+              "type": "TList",
+              "title": "innerContent",
+              "content": [
+                "Implemented backend server with Express and NodeJS. MongoDB for database, MVC structure, RESTful APIs :",
+                [
+                  "Created serveral routers for different APIs",
+                  "Different MVN layers handling each job",
+                  "Used libraries like latitude & longitude distance calculation to communicate with Google Map API",
+                  "APIs can talked with MongoDB using Mongoose"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "THTMLBox",
+          "content": "Constructed a dynamic application wihthin 36 hours and got more than 20 visitors' like in Hackathon."
+        }
+      ]
+    },
+    {
+      "type": "TContentBox",
+      "title": "Conclusion",
+      "content": [
+        {
+          "type": "THTMLBox",
+          "title": "innerConclusion",
+          "content": "I learned a lot for preparing this project. I spent a lot of time of Express, NodeJS, MongoDB, and so on. During the development, I find designing the structure is the most important thing. A good structrue helps seperated codes and beaviours, which makes the whole backend APIs clear, much easier to understand.      <br/> Also, I spent a lot of time thinking how the database should be like. A basic database must able to satisfy the requirements of storage. However, A good database is both easy to use and more extendable. I learned a lot in designing databases during the development. Although my design might not be the best, I will keep study!"
+        }
+      ]
     }
-]
+  ]
