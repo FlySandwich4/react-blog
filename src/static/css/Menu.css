@@ -116,9 +116,17 @@ Used by Menu.js
 
 .Menu_LinkSelected {
   color: rgb(234, 234, 234);
-  
 }
 
+.Menu_Version {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.Menu_FoldedVersion {
+  display: none;
+}
 
 /* 
 Scroll Bar's CSS Starting from this line
