@@ -44,11 +44,13 @@ const Menu = () => {
     const menuContainerClass = isMenuOpen ? "Menu_Container" : "Menu_FoldedContainer";
     const menuButtonClass = isMenuOpen ? "Menu_Button" : "Menu_FoldedButton";
     const menuClass = isMenuOpen ? "Menu" : "Menu_Folded";
+    const versionClass = isMenuOpen ? "Menu_Version" : "Menu_FoldedVersion"
     
     
     return (
     <div className={ menuContainerClass }>
         <button className={ menuButtonClass } onClick={ toggleMenu }> { menuButtonText } </button>
+        <div className={ versionClass }>v 1.1</div>
         <div className= { menuClass }>
             <div className="spacer"><br/><br/><br/><br/></div>
             <img className="Menu_Photo" src={ iconIMG }></img>
