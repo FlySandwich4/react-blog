@@ -34,7 +34,7 @@ Used by Menu.js
 
 .Menu {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   background-color:  rgb(130, 184, 173);
   align-items: center;
