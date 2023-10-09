@@ -56,7 +56,6 @@ const BlogRender = () => {
     if (cat === "project") result = data.project;
     if (cat === "experience") result = data.experience;
     if (cat === "leetcode") result = data.leetcode;
-    console.log(result);
     const returnJsx = result && result.content.map((content) => (
         <div key={content.title}> <ComponentRender data={content} date={result.postDate}/> </div>
     ))
