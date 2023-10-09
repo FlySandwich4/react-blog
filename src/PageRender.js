@@ -19,7 +19,7 @@ const BaseRender = (props) => {
             'width': '100vw',
             'height': contentHeight,
             'display': 'flex',
-            'flex-wrap': 'nowrap'
+            'flexWrap': 'nowrap'
         }
     }
     return (
@@ -55,10 +55,9 @@ const BlogRender = () => {
     const data = useFetchSingleBlog(slug, cat);
     if (cat === "project") result = data.project;
     if (cat === "experience") result = data.experience;
-    if (cat === "leetcode") result = data.leetCode;
-    // console.log(data);
+    if (cat === "leetcode") result = data.leetcode;
     const returnJsx = result && result.content.map((content) => (
-        <div key={content.title}> <ComponentRender data={content}/> </div>
+        <div key={content.title}> <ComponentRender data={content} date={result.postDate}/> </div>
     ))
 
     return (
