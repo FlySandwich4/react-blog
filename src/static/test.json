@@ -1,99 +1,87 @@
 [
-    {
+  {
       "type": "TTitle",
-      "postDate": "2023-2-13",
-      "description": "An IOS application makes travel easier, cheaper, and more economical.",
-      "title": "Duck Duck Ride IOS Mobile App"
-    },
-    {
+      "postDate": "2023-07-14",
+      "description": "So far, I've finished a lot of backtracking questions and I want to conclude them.",
+      "title": "A conclusion of BackTracking"
+  },
+  {
       "type": "TContentBox",
       "title": "Introduction",
       "content": [
-        {
-          "type": "THTMLBox",
-          "content": "Our inspiration for building Duck Duck Ride stemmed from the desire to create an app that allows people to travel to new places at a cheaper cost. We realized that transportation expenses can be burdensome, especially for students and people who don't have access to a car. With Duck Duck Ride, we aim to make travel more accessible, affordable, and environmentally friendly."
-        }
+          {
+              "type": "THTMLBox",
+              "content": "So far, I've finished a lot of backtracking questions and I want to conclude them."
+          }
       ]
-    },
-    {
+  },
+  {
       "type": "TContentBox",
-      "title": "Information",
+      "title": "First",
       "content": [
-        {
-          "type": "THTMLBox",
-          "content": "<h3>Project Name: </h3><li>Duck Duck Ride</li>"
-        },
-        {
-          "type": "THTMLBox",
-          "content": "<h3>Timeline: </h3><li>Apr 2023</li>"
-        },
-        {
-          "type": "THTMLBox",
-          "content": "<h3>Location: </h3><li>UCLA Los Angeles, CA</li>"
-        },
-        {
-          "type": "THTMLBox",
-          "content": "<h3>Tech Stacks: </h3><li>React-Native, NodeJS, Express, MongoDB</li>"
-        }
+          {
+              "type": "THTMLBox",
+              "content": "backtracking is not always efficient because it examines every possibility and checks if the result satisfies the requirement."
+          }
       ]
-    },
-    {
+  },
+  {
       "type": "TContentBox",
-      "title": "Content",
+      "title": "What is backtracking? How to write?",
       "content": [
-        {
-          "type": "TContentBox",
-          "title": "Frontend",
-          "content": [
-            {
-              "type": "TList",
-              "title": "innerContent",
-              "content": [
-                "Assisted teammates for frontend React-Native development :",
-                [
-                  "Written API document of how to use backend Restful APIs",
-                  "Adjusted CSS style for the app",
-                  "Page logic and buttons functionalities",
-                  "Google map api usage"
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "TContentBox",
-          "title": "Backend",
-          "content": [
-            {
-              "type": "TList",
-              "title": "innerContent",
-              "content": [
-                "Implemented backend server with Express and NodeJS. MongoDB for database, MVC structure, RESTful APIs :",
-                [
-                  "Created serveral routers for different APIs",
-                  "Different MVN layers handling each job",
-                  "Used libraries like latitude & longitude distance calculation to communicate with Google Map API",
-                  "APIs can talked with MongoDB using Mongoose"
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "THTMLBox",
-          "content": "Constructed a dynamic application wihthin 36 hours and got more than 20 visitors' like in Hackathon."
-        }
+          {
+              "type": "THTMLBox",
+              "content": "The backtracking, in my opinion, just provide a way of iterating into some situations that we can’t iterate. Its hard to understand the previous sentence. Here is an example:"
+          },
+          {
+            "type":"TCommandLineBox",
+            "content":"Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n]. <br/><br /> Input: n = 4, k = 2 <br /> Output: [[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]] <br /> Explanation: There are 4 choose 2 = 6 total combinations. <br /> <br />Note that combinations are unordered, i.e., [1,2] and [2,1] are considered to be the same combination."
+          },
+          {
+            "type": "THTMLBox",
+            "content": "<br/><big style='font-size: 1.8rem;'>If </big> k == 2, we might want to think : Okay, we need to choose 2 numbers from [1, n] and form a combination. Why don't I just use 2 for loops and get every combination?"
+          },
+          {
+            "type": "TCodeBox",
+            "title" : "brutal force",
+            "content": "\nvector<vector<int>> ans;\nfor (int i = 1; i <= n; i++) {\n    for (int j = i; j <= n; j++) {\n        ans.push_back(vector<int>{i,j});\n    }\n}\n"
+          },
+          {
+            "type": "THTMLBox",
+            "content": "<br/><big style='font-size: 1.8rem;'>What </big>  if k is larger? Iteration will not always work. So, backtracking is a solution for this. Actually, backtracking is a kind of recursion (it is!), we first add an element to somewhere, we do something, then we delete that element. It is vague? Lets see codes."
+          },
+          {
+            "type": "TCodeBox",
+            "title": "code",
+            "content": "\nclass Solution {\npublic:\n    vector<vector<int>> combine(int n, int k) {\n        vector<int> cur = vector<int>();\n        vector<vector<int>> ans = vector<vector<int>>();\n        addAll(n, 0, k, cur, ans);\n        return ans;\n    }\n\n    void addAll(int& n, int i, int k, vector<int>& prev, vector<vector<int>>& ans) {\n        if (k == 0) {\n            ans.push_back(prev);\n            return;\n        }\n        i++;\n        for (i; i <= n - k + 1; i++) {\n            prev.push_back(i);\n            addAll(n, i, k-1, prev, ans);\n            prev.pop_back();\n        }\n    }\n};\n"
+          },
+          {
+            "type": "THTMLBox",
+            "content": "<mark>As we can see here:</mark> i means the current index, k means the required length of the answer (remaining of the elements we need), cur means the current vector of int sequences, ans means the final answer. ans will be pushed by a lot of cur, cur is the key here in backtracking <br /><br /><mark>Base Case:</mark> if k == 0, meaning our cur reach the length the question need, for example, if input k is 2, it will ends after 2 recursions… <br/> <mark>Recursion:</mark> everytime, we push_back current int to the cur vector. We start the question from cur = [],"
+          },
+          {
+            "type": "TList",
+            "content": [
+             " when i = 0, we push nums[i] to cur, making cur = [ nums[0] ]",
+            "get into the recursion",
+            "when i = 1, we push nums[i+1] to cur, making cur = [ nums[0] , nums[1] ]",
+            "… keep recursion …",
+            "when we getting out from the recursion, we would like to pop back from cur",
+            "since we pushed nums[1], nums[0], they will all be pop out at some point. Lets say we finished finding ans starts with nums[0], we now want to find all answers starting from nums[1]. In my recursion, it will pop back nums[0] after addAll function, then it will continue for loop, iterating i until i = n - k + 1 (i-k+1) is a kind performance boosting, or pruning.",
+            "Finally we get all ans in vector ans!"
+            ]
+          }
       ]
-    },
-    {
-      "type": "TContentBox",
-      "title": "Conclusion",
-      "content": [
+  },
+  {
+    "type": "TContentBox",
+    "title": "Conclusion",
+    "content": [
         {
-          "type": "THTMLBox",
-          "title": "innerConclusion",
-          "content": "I learned a lot for preparing this project. I spent a lot of time of Express, NodeJS, MongoDB, and so on. During the development, I find designing the structure is the most important thing. A good structrue helps seperated codes and beaviours, which makes the whole backend APIs clear, much easier to understand.      <br/> Also, I spent a lot of time thinking how the database should be like. A basic database must able to satisfy the requirements of storage. However, A good database is both easy to use and more extendable. I learned a lot in designing databases during the development. Although my design might not be the best, I will keep study!"
+            "type": "THTMLBox",
+            "title": "innerConclusion",
+            "content": "During the study of backtracking, I learned a lot about different strategies of calculating and pruning. I am really proud of myself because I passed N-Queens with just one submission! Backtracking is a way to solve some questions that might be separated into a lot of “layers,” but it might not be the fastest one. Finally, I will keep learning algorithms and data structures!"
         }
-      ]
-    }
-  ]
+    ]
+}
+]

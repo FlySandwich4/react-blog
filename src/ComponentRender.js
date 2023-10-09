@@ -17,15 +17,14 @@ Params:
 */
 
 const componentMap = {
-    "TCodeBox":         (data => <TCodeBox {...data}/>),
-    "TContentBox" :     (data => <TContentBox {...data}/>),
-    "TParagraph" :      (data => <TParagraph {...data}/>),
-    "THTMLBox" :        (data => <THTMLBox {...data}/>),
-    "TTitle" :          (data => <TTitle {...data}/>),
-    "TList" :           (data => <TList {...data}/>),
-    "TImgTextBox" :           (data => <TImgTextBox {...data}/>),
-    "TCommandLineBox" :           (data => <TCommandLineBox {...data}/>),
-    "TTest": () => <div>Test</div>,
+    "TCodeBox":             TCodeBox,
+    "TContentBox" :         TContentBox,
+    "TParagraph" :          TParagraph,
+    "THTMLBox" :            THTMLBox,
+    "TTitle" :              TTitle,
+    "TList" :               TList,
+    "TImgTextBox" :         TImgTextBox ,
+    "TCommandLineBox" :     TCommandLineBox
 };
 
 /**
@@ -35,9 +34,10 @@ const componentMap = {
  */
 const ComponentRender = (props) => {
     const data = props.data;
+    const date = props.date;
     if (!data) return (<div>data is not an object with specific structure</div>);
     const Component = componentMap[data.type] || (() => <div>Component not found</div>);
-    return <Component {...data} />;
+    return <Component {...data} date={ date } />;
 };
 
  

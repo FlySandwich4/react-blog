@@ -9,7 +9,7 @@ const TTitle = (props) => {
     return ( 
     <div className="TTitle_Container">
         <div className="TTitle_Title">{ props.title }</div>
-        <div className="TTitle_Date">{ props.postDate }</div>
+        <div className="TTitle_Date">{ props.date }</div>
     </div> 
     );
 }
