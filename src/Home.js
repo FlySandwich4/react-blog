@@ -4,6 +4,7 @@ import THTMLBox from "./templates/THTMLBox";
 import TImgTextBox from "./templates/TImgTextBox";
 import TTitle from "./templates/TTitle"
 import sandwich from "./static/img/sandwich.png";
+import "./static/css/Home.css";
 
 /**
  * Only for the home page rendering. 
@@ -82,7 +83,14 @@ const Home = () => {
     return ( 
         <div>    
             {/* postDate here is just for fixing the TTitle template's props name, not a real date here */}
-            <TTitle title="Hi, This is Yue Wu, or Liam" postDate="* FlySandwich is also me"/>
+            <div class="Home_TitleContainer">
+                <p>Hello 👋 I'm</p>
+                <section class="animation">
+                    <div class="first"><div>{"Yue Wu (Liam)"}</div></div>
+                    <div class="second"><div>Web Developer</div></div>
+                    <div class="third"><div>{"FlySandwich 🥪"}</div></div>
+                </section>
+            </div>
             <TContentBox title="About Me" content={ about }/>
             <TImgTextBox imgSrc={sandwich} content={ thisProjectInfo }/>
             <TContentBox title="Links and Contacts" content={ urlInfo } />
