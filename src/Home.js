@@ -81,18 +81,13 @@ const Home = () => {
     `} />
     
     return ( 
-        <div>    
+        <div className="Home">    
             {/* postDate here is just for fixing the TTitle template's props name, not a real date here */}
-            <div class="Home_TitleContainer">
-                <p>Hello 👋 I'm</p>
-                <section class="animation">
-                    <div class="first"><div>{"Yue Wu (Liam)"}</div></div>
-                    <div class="second"><div>Web Developer</div></div>
-                    <div class="third"><div>{"FlySandwich 🥪"}</div></div>
-                </section>
+            <div className="Home_TitleContainer">
+                <div className="Home_Title">Welcome to the blog</div>
             </div>
             <TContentBox title="About Me" content={ about }/>
-            <TImgTextBox imgSrc={sandwich} content={ thisProjectInfo }/>
+            <span className="Home_BlogContent"><TImgTextBox imgSrc={sandwich} content={ thisProjectInfo }/></span>
             <TContentBox title="Links and Contacts" content={ urlInfo } />
         </div>
     );
