@@ -6,8 +6,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import BlogRouter from './BlogRouter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT
-console.log(API_ENDPOINT);
+const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
 
 const client = new ApolloClient({
   uri: API_ENDPOINT,

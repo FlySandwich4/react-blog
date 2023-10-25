@@ -48,3 +48,22 @@ pre {
   }
 }
 
+.Contact {
+  background-color: rgb(234, 234, 234);
+  text-align: center;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.Contact a {
+  text-decoration: underline;
+  font-style: italic;
+  color: rgb(130, 184, 173);
+}
+
+.Contact h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+

@@ -50,7 +50,7 @@ const Menu = () => {
     return (
     <div className={ menuContainerClass }>
         <button className={ menuButtonClass } onClick={ toggleMenu }> { menuButtonText } </button>
-        <div className={ versionClass }>v 1.1</div>
+        <div className={ versionClass }>{ process.env.REACT_APP_VERSION }</div>
         <div className= { menuClass }>
             <div className="spacer"><br/><br/><br/><br/></div>
             <img className="Menu_Photo" src={ iconIMG }></img>

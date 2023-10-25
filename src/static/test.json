@@ -1,87 +1,70 @@
 [
   {
-      "type": "TTitle",
-      "postDate": "2023-07-14",
-      "description": "So far, I've finished a lot of backtracking questions and I want to conclude them.",
-      "title": "A conclusion of BackTracking"
+    "type": "TTitle",
+    "postDate": "2022-06-22",
+    "description": "A C++ solution about navigation, finding the best path from one location to another.",
+    "title": "Navigation"
   },
   {
-      "type": "TContentBox",
-      "title": "Introduction",
-      "content": [
-          {
-              "type": "THTMLBox",
-              "content": "So far, I've finished a lot of backtracking questions and I want to conclude them."
-          }
-      ]
+    "type": "TContentBox",
+    "title": "Introduction",
+    "content": [
+      {
+        "type": "THTMLBox",
+        "content": "This is a Navigation project implemented with C++. It can do path finding base on different elements like traffic, time cost…"
+      }
+    ]
   },
   {
-      "type": "TContentBox",
-      "title": "First",
-      "content": [
-          {
-              "type": "THTMLBox",
-              "content": "backtracking is not always efficient because it examines every possibility and checks if the result satisfies the requirement."
-          }
-      ]
-  },
+    "type": "TContentBox",
+    "title": "Information",
+    "content": [
+    {
+        "type": "THTMLBox",
+        "content": "<h3>Project Name: </h3><li>Navigation</li>"
+    },
+    {
+        "type": "THTMLBox",
+        "content": "<h3>Timeline: </h3><li>March 2022 - June 2022</li>"
+    },
+    {
+        "type": "THTMLBox",
+        "content": "<h3>Location: </h3><li>Irvine, CA</li>"
+    },
+    {
+        "type": "THTMLBox",
+        "content": "<h3>Tech Stacks: </h3><li>C++</li>"
+    }
+    ]
+},
   {
-      "type": "TContentBox",
-      "title": "What is backtracking? How to write?",
-      "content": [
-          {
-              "type": "THTMLBox",
-              "content": "The backtracking, in my opinion, just provide a way of iterating into some situations that we can’t iterate. Its hard to understand the previous sentence. Here is an example:"
-          },
-          {
-            "type":"TCommandLineBox",
-            "content":"Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n]. <br/><br /> Input: n = 4, k = 2 <br /> Output: [[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]] <br /> Explanation: There are 4 choose 2 = 6 total combinations. <br /> <br />Note that combinations are unordered, i.e., [1,2] and [2,1] are considered to be the same combination."
-          },
-          {
-            "type": "THTMLBox",
-            "content": "<br/><big style='font-size: 1.8rem;'>If </big> k == 2, we might want to think : Okay, we need to choose 2 numbers from [1, n] and form a combination. Why don't I just use 2 for loops and get every combination?"
-          },
-          {
-            "type": "TCodeBox",
-            "title" : "brutal force",
-            "content": "\nvector<vector<int>> ans;\nfor (int i = 1; i <= n; i++) {\n    for (int j = i; j <= n; j++) {\n        ans.push_back(vector<int>{i,j});\n    }\n}\n"
-          },
-          {
-            "type": "THTMLBox",
-            "content": "<br/><big style='font-size: 1.8rem;'>What </big>  if k is larger? Iteration will not always work. So, backtracking is a solution for this. Actually, backtracking is a kind of recursion (it is!), we first add an element to somewhere, we do something, then we delete that element. It is vague? Lets see codes."
-          },
-          {
-            "type": "TCodeBox",
-            "title": "code",
-            "content": "\nclass Solution {\npublic:\n    vector<vector<int>> combine(int n, int k) {\n        vector<int> cur = vector<int>();\n        vector<vector<int>> ans = vector<vector<int>>();\n        addAll(n, 0, k, cur, ans);\n        return ans;\n    }\n\n    void addAll(int& n, int i, int k, vector<int>& prev, vector<vector<int>>& ans) {\n        if (k == 0) {\n            ans.push_back(prev);\n            return;\n        }\n        i++;\n        for (i; i <= n - k + 1; i++) {\n            prev.push_back(i);\n            addAll(n, i, k-1, prev, ans);\n            prev.pop_back();\n        }\n    }\n};\n"
-          },
-          {
-            "type": "THTMLBox",
-            "content": "<mark>As we can see here:</mark> i means the current index, k means the required length of the answer (remaining of the elements we need), cur means the current vector of int sequences, ans means the final answer. ans will be pushed by a lot of cur, cur is the key here in backtracking <br /><br /><mark>Base Case:</mark> if k == 0, meaning our cur reach the length the question need, for example, if input k is 2, it will ends after 2 recursions… <br/> <mark>Recursion:</mark> everytime, we push_back current int to the cur vector. We start the question from cur = [],"
-          },
-          {
-            "type": "TList",
-            "content": [
-             " when i = 0, we push nums[i] to cur, making cur = [ nums[0] ]",
-            "get into the recursion",
-            "when i = 1, we push nums[i+1] to cur, making cur = [ nums[0] , nums[1] ]",
-            "… keep recursion …",
-            "when we getting out from the recursion, we would like to pop back from cur",
-            "since we pushed nums[1], nums[0], they will all be pop out at some point. Lets say we finished finding ans starts with nums[0], we now want to find all answers starting from nums[1]. In my recursion, it will pop back nums[0] after addAll function, then it will continue for loop, iterating i until i = n - k + 1 (i-k+1) is a kind performance boosting, or pruning.",
-            "Finally we get all ans in vector ans!"
-            ]
-          }
-      ]
+    "type": "TContentBox",
+    "title": "Content",
+    "content": [
+      {
+        "type": "THTMLBox",
+        "content": "<h3>Constructed a navigation system with :</h3>"
+      },
+      {
+        "type": "TList",
+        "title": "innerContent",
+        "content": [
+          "Utilized different algorithms for calculating, for example, used Dijkstra’s Algorithm",
+          "Constructed different data structures like Graphs, Maps for storing data including positions, traffic…",
+          "Implemented an console I/O system that gave users interface to interact with the program"
+        ]
+      }
+    ]
   },
   {
     "type": "TContentBox",
     "title": "Conclusion",
     "content": [
-        {
-            "type": "THTMLBox",
-            "title": "innerConclusion",
-            "content": "During the study of backtracking, I learned a lot about different strategies of calculating and pruning. I am really proud of myself because I passed N-Queens with just one submission! Backtracking is a way to solve some questions that might be separated into a lot of “layers,” but it might not be the fastest one. Finally, I will keep learning algorithms and data structures!"
-        }
+      {
+        "type": "THTMLBox",
+        "title": "innerConclusion",
+        "content": "Successfully created algorithms to compute the paths and output system with perfect grammar and results. This program performs well and fast in loading data and path finding. The I/O interface in console is clear."
+      }
     ]
-}
+  }
 ]
