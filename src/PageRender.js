@@ -22,6 +22,16 @@ const BaseRender = (props) => {
             'flexWrap': 'nowrap'
         }
     }
+    const conactJsx = (    
+        <div className="Contact">
+            <h2>Contacts</h2>
+            <div>Email:  liamwu4@gmail.com</div>
+            <div>Github:    <a href="https://github.com/FlySandwich4"> Link </a></div>
+            <div>LinkedIn:  <a href="https://www.linkedin.com/in/yue-wu-b2bab8225/"> Link </a></div>
+            <div>LeetCode:  <a href="https://leetcode.com/FlySandwich/"> Link </a></div>
+        </div> 
+    )
+    console.log(props.hasContact)
     return (
         <div className='DisplayBox' style={mobileStyle.DisplayBox}>
             {/* DisplayBox: Everything display in this box, CSS in 'index.css', set to 100vw, 100vh */}  
@@ -30,6 +40,9 @@ const BaseRender = (props) => {
                 <div className="Content">
                     { props.content }
                 </div>
+                {
+                    props.hasContact === "true" ? conactJsx : null
+                }
             </div>
         </div>
     );
@@ -40,7 +53,7 @@ const BaseRender = (props) => {
  * 
  * @returns a jsx template, render a single blog detail page, all of its content
  */
-const BlogRender = () => {
+const BlogRender = (props) => {
     // Structrue of data:
     // query MyQuery {
     //     ${cat}(where: {slug: "${String(slug)}"}) {
@@ -61,7 +74,7 @@ const BlogRender = () => {
     ))
 
     return (
-        <BaseRender content={returnJsx} />
+        <BaseRender content={returnJsx} hasContact="true"/>
     );
 }
 
@@ -71,7 +84,7 @@ const BlogRender = () => {
  * 
  * @returns A jsx template, a page contains all blogs related to the category
  */
-const CatRender = () => {
+const CatRender = (props) => {
     const { cat } = useParams();
     const data = useFetchAllBlogs(cat);
     const certainPageMap = {
@@ -80,7 +93,7 @@ const CatRender = () => {
     }
     if (cat in certainPageMap) {
         return (
-            <BaseRender content={certainPageMap[cat]} />
+            <BaseRender content={certainPageMap[cat]} hasContact="true" />
         );
     }
     var result = null;
@@ -91,7 +104,7 @@ const CatRender = () => {
         <div key={eachBlog.title}> <TBlogCard {...eachBlog}  cat={cat}> </TBlogCard> </div>
     ))
     return (
-        <BaseRender content={resultJsx} />
+        <BaseRender content={resultJsx}/>
     );
 }
 

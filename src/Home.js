@@ -73,12 +73,13 @@ const Home = () => {
     `} />;
 
     // For personal website links info
-    const urlInfo = <THTMLBox content={`
-        <h3> <a href="https://github.com/FlySandwich4"> Github </a> </h3>
-        <h3> <a href="https://www.linkedin.com/in/yue-wu-b2bab8225/"> LinkedIn </a> </h3>
-        <h3> <a href="https://leetcode.com/FlySandwich/"> LeetCode </a> </h3>
-        <h3> Email: liamwu4@gmail.com </h3>
-    `} />
+    // abandoned on 24/10/2023, moved to PageRender::BaseRender, which render contact for every page
+    // const urlInfo = <THTMLBox content={`
+    //     <h3> <a href="https://github.com/FlySandwich4"> Github </a> </h3>
+    //     <h3> <a href="https://www.linkedin.com/in/yue-wu-b2bab8225/"> LinkedIn </a> </h3>
+    //     <h3> <a href="https://leetcode.com/FlySandwich/"> LeetCode </a> </h3>
+    //     <h3> Email: liamwu4@gmail.com </h3>
+    // `} />
     
     return ( 
         <div className="Home">    
@@ -88,7 +89,6 @@ const Home = () => {
             </div>
             <TContentBox title="About Me" content={ about }/>
             <span className="Home_BlogContent"><TImgTextBox imgSrc={sandwich} content={ thisProjectInfo }/></span>
-            <TContentBox title="Links and Contacts" content={ urlInfo } />
         </div>
     );
 }
