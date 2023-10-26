@@ -12,7 +12,7 @@ This is a **blog template** that provides you ways to create and manage data
 ## 3.1 General Information
 This project uses `React` framework
 Here is the `UML Diagram` about directory structure:
-![UML](/src/static/img/umlDiagram.jpg)
+![UML](/src/static/img/umlDiagram.png)
 
 # 4. Version History (latest to oldest)
 
@@ -22,7 +22,8 @@ Here is the `UML Diagram` about directory structure:
 - `UML Diagram` and `README` of the project are available now
 - `.env` protection
 
----
+----
+
 #### `v1.1` : First publishment of the template
 - mobile friendy menu ( `Menu.js` ) and whole page layout ( `static/index.css` )
 - `useFetch.js` hook for each blog page and category page
