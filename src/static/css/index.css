@@ -3,6 +3,7 @@ body {
   font-family: "Young Serif", "Times New Roman";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 
