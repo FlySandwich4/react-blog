@@ -11,6 +11,11 @@
     margin: 0;
 }
 
+.THTMLBox_Container ul {
+    padding-left: 1rem;
+    margin: 0;
+}
+
 /* highlight the text : use html mark tag => <strong> word </strong> */
 .THTMLBox_Container mark {
     background-color: yellow;

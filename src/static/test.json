@@ -21,7 +21,7 @@
     "content": [
     {
         "type": "THTMLBox",
-        "content": "<h3>Project Name: </h3><li>Navigation</li>"
+        "content": "<div><h3>Project Name: </h3><li>Navigation</li></div>"
     },
     {
         "type": "THTMLBox",
@@ -29,7 +29,7 @@
     },
     {
         "type": "THTMLBox",
-        "content": "<h3>Location: </h3><li>Irvine, CA</li>"
+        "content": "<h3>Location: </h3><ul><li>Irvine, CA</li></ul>"
     },
     {
         "type": "THTMLBox",
