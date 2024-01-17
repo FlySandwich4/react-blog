@@ -39,7 +39,7 @@ Used by Menu.js
   background-color:  rgb(130, 184, 173);
   align-items: center;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden; /* Required: Turn off the scroll bar during transition */
 }
 
