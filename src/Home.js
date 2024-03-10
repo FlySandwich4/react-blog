@@ -88,6 +88,8 @@ const Home = () => {
                 <div className="Home_Title">Welcome to the blog</div>
             </div>
             <TContentBox title="About Me" content={ about }/>
+            <h1> My contribution in the last year</h1>
+            <div className="contribution"><img className="contribution" src="https://ghchart.rshah.org/flysandwich4"></img></div>
             <span className="Home_BlogContent"><TImgTextBox imgSrc={sandwich} content={ thisProjectInfo }/></span>
         </div>
     );
