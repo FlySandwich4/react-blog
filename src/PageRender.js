@@ -69,6 +69,7 @@ const BlogRender = (props) => {
     if (cat === "project") result = data.project;
     if (cat === "experience") result = data.experience;
     if (cat === "leetcode") result = data.leetcode;
+    if (cat === "note") result = data.note;
     const returnJsx = result && result.content.map((content) => (
         <div key={content.title}> <ComponentRender data={content} date={result.postDate}/> </div>
     ))
@@ -100,6 +101,7 @@ const CatRender = (props) => {
     if (cat === "project") result = data.projects;
     if (cat === "experience") result = data.experiences;
     if (cat === "leetcode") result = data.leetcodes;
+    if (cat === "note") result = data.notes;
     const resultJsx = result && result.map((eachBlog) => (
         <div key={eachBlog.title}> <TBlogCard {...eachBlog}  cat={cat}> </TBlogCard> </div>
     ))
