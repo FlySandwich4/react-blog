@@ -1,0 +1,76 @@
+[
+  {
+    "type": "TTitle",
+    "postDate": "2022-06-22",
+    "description": "A C++ solution about navigation, finding the best path from one location to another.",
+    "title": "Navigation"
+  },
+  {
+    "type": "TContentBox",
+    "title": "Introduction",
+    "content": [
+      {
+        "type": "THTMLBox",
+        "content": "This is a Navigation project implemented with C++. It can do path finding base on different elements like traffic, time cost…"
+      }
+    ]
+  },
+  {
+    "type": "TContentBox",
+    "title": "Information",
+    "content": [
+    {
+        "type": "THTMLBox",
+        "content": "<div><h3>Project Name: </h3><li>Navigation</li></div>"
+    },
+    {
+        "type": "THTMLBox",
+        "content": "<h3>Timeline: </h3><li>March 2022 - June 2022</li>"
+    },
+    {
+        "type": "THTMLBox",
+        "content": "<h3>Location: </h3><ul><li>Irvine, CA</li></ul>"
+    },
+    {
+        "type": "THTMLBox",
+        "content": "<h3>Tech Stacks: </h3><li>C++</li>"
+    }
+    ]
+  },
+  {
+    "type": "TContentBox",
+    "title": "Content",
+    "content": [
+      {
+        "type": "THTMLBox",
+        "content": "<h3>Constructed a navigation system with :</h3>"
+      },
+      {
+        "type": "TList",
+        "title": "innerContent",
+        "content": [
+          "Utilized different algorithms for calculating, for example, used Dijkstra’s Algorithm",
+          "Constructed different data structures like Graphs, Maps for storing data including positions, traffic…",
+          "Implemented an console I/O system that gave users interface to interact with the program"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "TContentBox",
+    "title": "Conclusion",
+    "content": [
+      {
+        "type": "THTMLBox",
+        "title": "innerConclusion",
+        "content": "Successfully created algorithms to compute the paths and output system with perfect grammar and results. This program performs well and fast in loading data and path finding. The I/O interface in console is clear."
+      }
+    ]
+  },
+  {
+    "type": "TMarkdown",
+    "title": "markdown",
+    "content" : "1"
+  }
+
+]

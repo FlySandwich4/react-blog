@@ -4,6 +4,7 @@ import TContentBox from "./templates/TContentBox";
 import THTMLBox from "./templates/THTMLBox";
 import TImgTextBox from "./templates/TImgTextBox";
 import TList from "./templates/TList";
+import TMarkdown from "./templates/TMarkdown";
 import TParagraph from "./templates/TParagraph";
 import TTitle from "./templates/TTitle";
 
@@ -24,7 +25,8 @@ const componentMap = {
     "TTitle" :              TTitle,
     "TList" :               TList,
     "TImgTextBox" :         TImgTextBox ,
-    "TCommandLineBox" :     TCommandLineBox
+    "TCommandLineBox" :     TCommandLineBox,
+    "TMarkdown":            TMarkdown,
 };
 
 /**
