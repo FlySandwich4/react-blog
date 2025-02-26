@@ -17,6 +17,7 @@ const Test = () => {
                     {content && content.map((each) => (
                         <div key={each.title}> <ComponentRender data={each}/> </div>
                     ))}
+                    
                 </div>
             </div>
         </div>
