@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./static/css/Menu.css";
-import iconIMG from "./static/img/yueZ.jpeg";
+import iconIMG from "./static/img/magicCat.png";
 
 
 /**
@@ -50,7 +50,7 @@ const Menu = () => {
     return (
     <div className={ menuContainerClass }>
         <button className={ menuButtonClass } onClick={ toggleMenu }> { menuButtonText } </button>
-        <div className={ versionClass }> v1.2 </div>
+        <div className={ versionClass }> v1.3 </div>
         <div className= { menuClass }>
             <div className="spacer"><br/><br/><br/><br/></div>
             <img className="Menu_Photo" src={ iconIMG }></img>
