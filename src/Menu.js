@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./static/css/Menu.css";
-import iconIMG from "./static/img/magicCat.png";
+import iconIMG from "./static/img/magicCat.gif";
 
 
 /**
